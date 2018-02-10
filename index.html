@@ -644,7 +644,39 @@
   <script type="text/javascript" charset="utf-8" src="./index_files/metrics.js"></script>
   <script type="text/javascript" charset="utf-8" src="./index_files/community.aspx"></script>
   <link href="./index_files/WidgetLauncher.css" rel="stylesheet">
-  <style type="text/css"></style>
+  <style type="text/css">
+    #kh_hs_back {
+      width: 100%;
+      background: url(./images/header.jpg);
+      background-size: cover;
+      background-position: 50% 50%;
+      background-position-x: 50%;
+      background-position-y: 50%;
+      height: 480px;
+      position : relative;
+    }
+
+    #kh_hs_back .content{
+     position: absolute;
+     top:50%;
+     left:50%;
+     transform: translate(-50%, -50%);
+     font-size:5rem;
+     color: white;
+     z-index: 2;
+     text-align: center;
+   }
+
+   #kh_middle{
+     width: 100%;
+     background: url(./images/middle_1.png);
+     background-size: cover;
+     background-position: 50% 50%;
+     background-position-x: 50%;
+     background-position-y: 40%;
+     height: 480px;
+   }
+  </style>
 </head>
 
 <body lang="en" style="overflow-y: auto;">
@@ -668,10 +700,10 @@
         </div>
       </div>
       <div id="MSTCHidden" style="display: none;"><span id="MSTCAppIdToken">Y7l-WttX30iMg0nMjjmVKSb4VW7AMOmvqPZUIL8SgRL9xjui2245yzQo516swHnVqpove4xLKYqpR8LwO2iiU9oNm4SLP8h6i2jaIgMJHfr2vQsVxEdipbYzwp7iqlyiD</span><span id="MSTCMaxRating">1</span><span id="MSTCImagePath">https://ssl.microsofttranslator.com/static/25292150/img/</span>
+        <span id="MSTCAuthLang"></span><a id="MSTCDashboardUrl"></a><span id="MSTCSubmitting">Submitting...</span><span id="MSTCApprove">Approve</span><span id="MSTCApproveTooltip">Approve this as the default translation</span><span id="MSTCReject">Reject</span>
         <span
-          id="MSTCAuthLang"></span><a id="MSTCDashboardUrl"></a><span id="MSTCSubmitting">Submitting...</span><span id="MSTCApprove">Approve</span><span id="MSTCApproveTooltip">Approve this as the default translation</span><span id="MSTCReject">Reject</span><span id="MSTCRejectTooltip">Hide this translation from other users</span>
-          <span
-            id="MSTCRestore">Restore</span><span id="MSTCRestoreTooltip">Show this translation to other users</span><span id="MSTCUserID"></span></div>
+          id="MSTCRejectTooltip">Hide this translation from other users</span>
+          <span id="MSTCRestore">Restore</span><span id="MSTCRestoreTooltip">Show this translation to other users</span><span id="MSTCUserID"></span></div>
     </div>
   </div>
 
@@ -1072,278 +1104,276 @@
                       aria-expanded="false">
                       <input data-m="{&quot;cN&quot;:&quot;cli_shellHeaderSearchInput&quot;,&quot;pid&quot;:&quot;query&quot;,&quot;id&quot;:&quot;nn1c1c10c4c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c1c10c4c1m1r1a1&quot;}" id="cli_shellHeaderSearchInput" aria-label="Microsoft 교육 검색"
                         role="combobox" aria-autocomplete="list" aria-controls="universal-header-search-auto-suggest-transparent" aria-owns="universal-header-search-auto-suggest-ul" type="search" name="query" placeholder="Microsoft 교육 검색">
-                      <div
-                        class="x-screen-reader" aria-live="assertive"></div>
-                  <input data-m="{&quot;pid&quot;:&quot;Form1&quot;,&quot;id&quot;:&quot;nn3c1c10c4c1m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c1c10c4c1m1r1a1&quot;}" type="hidden" name="Form1" value="education">
-                  <button id="search" aria-label="검색" class="c-glyph" data-m="{&quot;cN&quot;:&quot;Search_nav&quot;,&quot;id&quot;:&quot;n5c1c10c4c1m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c1c10c4c1m1r1a1&quot;}" data-bi-dnt="true"></button>
-                  <div class="m-auto-suggest" id="universal-header-search-auto-suggest-transparent" role="group">
-                    <ul class="c-menu" id="universal-header-search-auto-suggest-ul" aria-hidden="true" data-bi-dnt="true" data-js-auto-suggest-position="default" role="listbox" data-tel="jsll" data-m="{&quot;cN&quot;:&quot;search suggestions_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c6c1c10c4c1m1r1a1&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c1c10c4c1m1r1a1&quot;}"></ul>
-                    <ul class="c-menu f-auto-suggest-no-results" aria-hidden="true" data-js-auto-suggest-postion="default" data-js-auto-suggest-position="default" tabindex="0">
-                      <li class="c-menu-item"> <span tabindex="-1"></span></li>
-                    </ul>
-                  </div>
+                      <div class="x-screen-reader" aria-live="assertive"></div>
+                      <input data-m="{&quot;pid&quot;:&quot;Form1&quot;,&quot;id&quot;:&quot;nn3c1c10c4c1m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c1c10c4c1m1r1a1&quot;}" type="hidden" name="Form1" value="education">
+                      <button id="search" aria-label="검색" class="c-glyph" data-m="{&quot;cN&quot;:&quot;Search_nav&quot;,&quot;id&quot;:&quot;n5c1c10c4c1m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c1c10c4c1m1r1a1&quot;}" data-bi-dnt="true"></button>
+                      <div class="m-auto-suggest" id="universal-header-search-auto-suggest-transparent" role="group">
+                        <ul class="c-menu" id="universal-header-search-auto-suggest-ul" aria-hidden="true" data-bi-dnt="true" data-js-auto-suggest-position="default" role="listbox" data-tel="jsll" data-m="{&quot;cN&quot;:&quot;search suggestions_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c6c1c10c4c1m1r1a1&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c1c10c4c1m1r1a1&quot;}"></ul>
+                        <ul class="c-menu f-auto-suggest-no-results" aria-hidden="true" data-js-auto-suggest-postion="default" data-js-auto-suggest-position="default" tabindex="0">
+                          <li class="c-menu-item"> <span tabindex="-1"></span></li>
+                        </ul>
+                      </div>
 
-                  </form>
+                    </form>
 
-                  <a id="uhf-shopping-cart" aria-label="0 개의 쇼핑 카트 항목" class="c-action-trigger c-glyph glyph-shopping-cart" href="https://www.microsoft.com/ko-kr/store/buy" data-m="{&quot;cN&quot;:&quot;GlobalNav_Cart_nav&quot;,&quot;bhvr&quot;:82,&quot;id&quot;:&quot;n2c10c4c1m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c10c4c1m1r1a1&quot;}">
+                    <a id="uhf-shopping-cart" aria-label="0 개의 쇼핑 카트 항목" class="c-action-trigger c-glyph glyph-shopping-cart" href="https://www.microsoft.com/ko-kr/store/buy" data-m="{&quot;cN&quot;:&quot;GlobalNav_Cart_nav&quot;,&quot;bhvr&quot;:82,&quot;id&quot;:&quot;n2c10c4c1m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c10c4c1m1r1a1&quot;}">
             <span class="shopping-cart-amount x-hidden" aria-hidden="true">0</span>
         </a>
-                  <iframe id="shell-cart-count" data-src="//www.microsoft.com/store/buy/cartcount" style="display: none" src="./index_files/cartcount.html"></iframe>
+                    <iframe id="shell-cart-count" data-src="//www.microsoft.com/store/buy/cartcount" style="display: none" src="./index_files/cartcount.html"></iframe>
 
 
 
 
+                  </div>
                 </div>
+
+
               </div>
+              <div class="theme-dark brand-neutral js-cat-head" itemprop="brand" itemscope="itemscope" itemtype="http://schema.org/Brand" data-m="{&quot;cN&quot;:&quot;UHF category nav_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c5c1m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c1m1r1a1&quot;}">
 
-
-          </div>
-          <div class="theme-dark brand-neutral js-cat-head" itemprop="brand" itemscope="itemscope" itemtype="http://schema.org/Brand" data-m="{&quot;cN&quot;:&quot;UHF category nav_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c5c1m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c1m1r1a1&quot;}">
-
-            <div>
-              <a id="uhfCatLogo" class="c-logo" href="https://www.microsoft.com/ko-kr/education/default.aspx" aria-label="교육" itemprop="url" data-m="{&quot;cN&quot;:&quot;교육_nav&quot;,&quot;id&quot;:&quot;n1c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}">
+                <div>
+                  <a id="uhfCatLogo" class="c-logo" href="https://www.microsoft.com/ko-kr/education/default.aspx" aria-label="교육" itemprop="url" data-m="{&quot;cN&quot;:&quot;교육_nav&quot;,&quot;id&quot;:&quot;n1c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}">
                 <span>교육</span>
         </a>
 
-              <button class="c-action-trigger c-glyph glyph-chevron-left js-primary-paddle" aria-label="왼쪽으로 스크롤" title="왼쪽으로 스크롤" data-m="{&quot;cN&quot;:&quot;Previous_nonnav&quot;,&quot;id&quot;:&quot;nn2c5c1m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}"
-                tabindex="-1" style="display: none;"></button>
+                  <button class="c-action-trigger c-glyph glyph-chevron-left js-primary-paddle" aria-label="왼쪽으로 스크롤" title="왼쪽으로 스크롤" data-m="{&quot;cN&quot;:&quot;Previous_nonnav&quot;,&quot;id&quot;:&quot;nn2c5c1m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}"
+                    tabindex="-1" style="display: none;"></button>
 
-              <button class="c-action-trigger c-glyph glyph-chevron-right js-secondary-paddle" aria-label="오른쪽으로 스크롤" title="오른쪽으로 스크롤" data-m="{&quot;cN&quot;:&quot;Next_nonnav&quot;,&quot;id&quot;:&quot;nn3c5c1m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}"
-                tabindex="-1" style="display: none;"></button>
-              <nav id="uhf-c-nav" role="navigation" aria-labelledby="uhfCatLogo" class="js-paddle-items" style="">
+                  <button class="c-action-trigger c-glyph glyph-chevron-right js-secondary-paddle" aria-label="오른쪽으로 스크롤" title="오른쪽으로 스크롤" data-m="{&quot;cN&quot;:&quot;Next_nonnav&quot;,&quot;id&quot;:&quot;nn3c5c1m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}"
+                    tabindex="-1" style="display: none;"></button>
+                  <nav id="uhf-c-nav" role="navigation" aria-labelledby="uhfCatLogo" class="js-paddle-items" style="">
 
-                <div class="c-uhf-menu js-nav-menu" role="none" style="transition: margin 0.667s cubic-bezier(0.16, 1, 0.29, 0.99); margin-left: 0px;">
-                  <button id="shellmenu_63" aria-expanded="false" aria-haspopup="true" data-m="{&quot;cN&quot;:&quot;CatNav_SchoolLeaders_nonnav&quot;,&quot;id&quot;:&quot;nn4c5c1m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}">교육 지도자</button>
-                  <ul class="" aria-labelledby="shellmenu_63" aria-hidden="true" data-m="{&quot;cN&quot;:&quot;SchoolLeaders_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c5c5c1m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}"
-                    role="none">
-                    <li data-m="{&quot;cN&quot;:&quot;SchoolLeaders_Overview_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c1c5c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c5c5c1m1r1a1&quot;}">
-                      <a id="shellmenu_64" class="js-subm-uhf-nav-link" href="http://www.microsoft.com/ko-kr/education/school-leaders/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_SchoolLeaders_Overview_nav&quot;,&quot;id&quot;:&quot;n1c1c5c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c1c5c5c1m1r1a1&quot;}">교육 지도자 개요</a>
-
-                    </li>
-                    <li data-m="{&quot;cN&quot;:&quot;HigherEducation_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c5c5c1m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c5c5c1m1r1a1&quot;}">
-                      <a id="shellmenu_65" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/educators/higher-education/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_HigherEducation_nav&quot;,&quot;id&quot;:&quot;n1c2c5c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c5c5c1m1r1a1&quot;}">고등 교육</a>
-
-                    </li>
-                    <li data-m="{&quot;cN&quot;:&quot;SchoolLeaders_TechnologyPlanning_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c3c5c5c1m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c5c5c1m1r1a1&quot;}">
-                      <a id="shellmenu_66" class="js-subm-uhf-nav-link" href="http://www.microsoft.com/ko-kr/education/school-leaders/create-innovative-schools/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_SchoolLeaders_TechnologyPlanning_nav&quot;,&quot;id&quot;:&quot;n1c3c5c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c3c5c5c1m1r1a1&quot;}">기술 계획 리소스</a>
-
-                    </li>
-                    <li data-m="{&quot;cN&quot;:&quot;SchoolLeaders_SchoolTransformation_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c4c5c5c1m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c5c5c1m1r1a1&quot;}">
-                      <a id="shellmenu_67" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/school-leaders/school-systems-planning/components.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_SchoolLeaders_SchoolTransformation_nav&quot;,&quot;id&quot;:&quot;n1c4c5c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c4c5c5c1m1r1a1&quot;}">학교 혁신</a>
-
-                    </li>
-                    <li data-m="{&quot;cN&quot;:&quot;SchoolLeaders_SetupAndManagement_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c5c5c5c1m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c5c5c1m1r1a1&quot;}">
-                      <a id="shellmenu_68" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/management/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_SchoolLeaders_SetupAndManagement_nav&quot;,&quot;id&quot;:&quot;n1c5c5c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c5c5c5c1m1r1a1&quot;}">설정 및 관리</a>
-
-                    </li>
-                    <li data-m="{&quot;cN&quot;:&quot;Academic research_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c6c5c5c1m1r1a1&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c5c5c1m1r1a1&quot;}">
-                      <a id="Academic_research" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/school-leaders/research.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Academic research_nav&quot;,&quot;id&quot;:&quot;n1c6c5c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c6c5c5c1m1r1a1&quot;}">학술 연구</a>
-
-                    </li>
-                    <li data-m="{&quot;cN&quot;:&quot;Connected campus and school experiences_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c7c5c5c1m1r1a1&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c5c5c1m1r1a1&quot;}">
-                      <a id="Connected_campus_and_school_experiences" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/school-leaders/campus.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Connected campus and school experiences_nav&quot;,&quot;id&quot;:&quot;n1c7c5c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c7c5c5c1m1r1a1&quot;}">서로 연결된 캠퍼스 및 학교 생활</a>
-
-                    </li>
-                    <li data-m="{&quot;cN&quot;:&quot;Student lifecycle and success management_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c8c5c5c1m1r1a1&quot;,&quot;sN&quot;:8,&quot;aN&quot;:&quot;c5c5c1m1r1a1&quot;}">
-                      <a id="Student_lifecycle_and_success_management" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/school-leaders/lifecycle.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Student lifecycle and success management_nav&quot;,&quot;id&quot;:&quot;n1c8c5c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c8c5c5c1m1r1a1&quot;}">학생 라이프사이클 및 성취도 관리</a>
-
-                    </li>
-                    <li data-m="{&quot;cN&quot;:&quot;Teaching and learning_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c9c5c5c1m1r1a1&quot;,&quot;sN&quot;:9,&quot;aN&quot;:&quot;c5c5c1m1r1a1&quot;}">
-                      <a id="Teaching_and_learning" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/school-leaders/teaching.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Teaching and learning_nav&quot;,&quot;id&quot;:&quot;n1c9c5c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c9c5c5c1m1r1a1&quot;}">교수 및 학습 관리</a>
-
-                    </li>
-
-                  </ul>
-                </div>
-                <div class="c-uhf-menu js-nav-menu" role="none">
-                  <button id="shellmenu_73" aria-expanded="false" aria-haspopup="true" data-m="{&quot;cN&quot;:&quot;CatNav_Educators_nonnav&quot;,&quot;id&quot;:&quot;nn6c5c1m1r1a1&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}">교육자</button>
-                  <ul class="" aria-labelledby="shellmenu_73" aria-hidden="true" data-m="{&quot;cN&quot;:&quot;Educators_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c7c5c1m1r1a1&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}" role="none">
-                    <li data-m="{&quot;cN&quot;:&quot;Educators_Overview_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c1c7c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c7c5c1m1r1a1&quot;}">
-                      <a id="shellmenu_74" class="js-subm-uhf-nav-link" href="http://www.microsoft.com/ko-kr/education/educators/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Educators_Overview_nav&quot;,&quot;id&quot;:&quot;n1c1c7c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c1c7c5c1m1r1a1&quot;}">교육자 개요 및 제공 혜택</a>
-
-                    </li>
-                    <li class="f-sub-menu js-nav-menu" data-m="{&quot;cN&quot;:&quot;Educators_EducatorCommunity_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c7c5c1m1r1a1&quot;}">
-
-                      <button id="교육자커뮤니티-navigation" aria-expanded="false" data-m="{&quot;cN&quot;:&quot;CatNav_Educators_EducatorCommunity_nonnav&quot;,&quot;id&quot;:&quot;nn1c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c7c5c1m1r1a1&quot;}">교육자 커뮤니티</button>
-                      <ul aria-labelledby="교육자커뮤니티-navigation" aria-hidden="true" role="none">
-                        <li data-m="{&quot;cN&quot;:&quot;Microsoft Innovative Educator (MIE) programs_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c2c7c5c1m1r1a1&quot;}">
-                          <a id="Microsoft Innovative Educator (MIE) programs" class="js-subm-uhf-nav-link" href="https://education.microsoft.com/microsoft-innovative-educator-programs/mie" data-m="{&quot;cN&quot;:&quot;CatNav_Microsoft Innovative Educator (MIE) programs_nav&quot;,&quot;id&quot;:&quot;n1c2c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c2c7c5c1m1r1a1&quot;}">Microsoft Innovative Educator(MIE) 프로그램</a>
+                    <div class="c-uhf-menu js-nav-menu" role="none" style="transition: margin 0.667s cubic-bezier(0.16, 1, 0.29, 0.99); margin-left: 0px;">
+                      <button id="shellmenu_63" aria-expanded="false" aria-haspopup="true" data-m="{&quot;cN&quot;:&quot;CatNav_SchoolLeaders_nonnav&quot;,&quot;id&quot;:&quot;nn4c5c1m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}">교육 지도자</button>
+                      <ul class="" aria-labelledby="shellmenu_63" aria-hidden="true" data-m="{&quot;cN&quot;:&quot;SchoolLeaders_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c5c5c1m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}"
+                        role="none">
+                        <li data-m="{&quot;cN&quot;:&quot;SchoolLeaders_Overview_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c1c5c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c5c5c1m1r1a1&quot;}">
+                          <a id="shellmenu_64" class="js-subm-uhf-nav-link" href="http://www.microsoft.com/ko-kr/education/school-leaders/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_SchoolLeaders_Overview_nav&quot;,&quot;id&quot;:&quot;n1c1c5c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c1c5c5c1m1r1a1&quot;}">교육 지도자 개요</a>
 
                         </li>
-                        <li data-m="{&quot;cN&quot;:&quot;Badges, points, and certificates_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c3c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c2c7c5c1m1r1a1&quot;}">
-                          <a id="Badges, points, and certificates" class="js-subm-uhf-nav-link" href="https://education.microsoft.com/badges-points-certificates/badges-and-points" data-m="{&quot;cN&quot;:&quot;CatNav_Badges, points, and certificates_nav&quot;,&quot;id&quot;:&quot;n1c3c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c3c2c7c5c1m1r1a1&quot;}">배지, 포인트 및 수료증</a>
+                        <li data-m="{&quot;cN&quot;:&quot;HigherEducation_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c5c5c1m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c5c5c1m1r1a1&quot;}">
+                          <a id="shellmenu_65" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/educators/higher-education/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_HigherEducation_nav&quot;,&quot;id&quot;:&quot;n1c2c5c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c5c5c1m1r1a1&quot;}">고등 교육</a>
 
                         </li>
-                        <li data-m="{&quot;cN&quot;:&quot;Courses and resources_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c4c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c2c7c5c1m1r1a1&quot;}">
-                          <a id="Courses and resources" class="js-subm-uhf-nav-link" href="https://education.microsoft.com/courses-and-resources/courses" data-m="{&quot;cN&quot;:&quot;CatNav_Courses and resources_nav&quot;,&quot;id&quot;:&quot;n1c4c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c4c2c7c5c1m1r1a1&quot;}">교육 과정 및 리소스</a>
+                        <li data-m="{&quot;cN&quot;:&quot;SchoolLeaders_TechnologyPlanning_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c3c5c5c1m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c5c5c1m1r1a1&quot;}">
+                          <a id="shellmenu_66" class="js-subm-uhf-nav-link" href="http://www.microsoft.com/ko-kr/education/school-leaders/create-innovative-schools/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_SchoolLeaders_TechnologyPlanning_nav&quot;,&quot;id&quot;:&quot;n1c3c5c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c3c5c5c1m1r1a1&quot;}">기술 계획 리소스</a>
 
                         </li>
-                        <li data-m="{&quot;cN&quot;:&quot;Skype in the Classroom_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c5c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c2c7c5c1m1r1a1&quot;}">
-                          <a id="Skype in the Classroom" class="js-subm-uhf-nav-link" href="https://education.microsoft.com/skype-in-the-classroom/overview" data-m="{&quot;cN&quot;:&quot;CatNav_Skype in the Classroom_nav&quot;,&quot;id&quot;:&quot;n1c5c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c5c2c7c5c1m1r1a1&quot;}">교실에서의 Skype</a>
+                        <li data-m="{&quot;cN&quot;:&quot;SchoolLeaders_SchoolTransformation_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c4c5c5c1m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c5c5c1m1r1a1&quot;}">
+                          <a id="shellmenu_67" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/school-leaders/school-systems-planning/components.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_SchoolLeaders_SchoolTransformation_nav&quot;,&quot;id&quot;:&quot;n1c4c5c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c4c5c5c1m1r1a1&quot;}">학교 혁신</a>
 
                         </li>
-                        <li data-m="{&quot;cN&quot;:&quot;Find, create, and share lessons_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c6c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c2c7c5c1m1r1a1&quot;}">
-                          <a id="Find, create, and share lessons" class="js-subm-uhf-nav-link" href="https://education.microsoft.com/find-create-and-share-a-lesson/lesson-plans" data-m="{&quot;cN&quot;:&quot;CatNav_Find, create, and share lessons_nav&quot;,&quot;id&quot;:&quot;n1c6c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c6c2c7c5c1m1r1a1&quot;}">수업 검색, 생성, 공유</a>
+                        <li data-m="{&quot;cN&quot;:&quot;SchoolLeaders_SetupAndManagement_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c5c5c5c1m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c5c5c1m1r1a1&quot;}">
+                          <a id="shellmenu_68" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/management/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_SchoolLeaders_SetupAndManagement_nav&quot;,&quot;id&quot;:&quot;n1c5c5c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c5c5c5c1m1r1a1&quot;}">설정 및 관리</a>
 
                         </li>
-                        <li data-m="{&quot;cN&quot;:&quot;Connect and share with educators_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c7c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c2c7c5c1m1r1a1&quot;}">
-                          <a id="Connect and share with educators" class="js-subm-uhf-nav-link" href="https://education.microsoft.com/connect-and-share-with-educators/connect-with-other-educators" data-m="{&quot;cN&quot;:&quot;CatNav_Connect and share with educators_nav&quot;,&quot;id&quot;:&quot;n1c7c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c7c2c7c5c1m1r1a1&quot;}">교육을 통한 교류 및 공유</a>
+                        <li data-m="{&quot;cN&quot;:&quot;Academic research_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c6c5c5c1m1r1a1&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c5c5c1m1r1a1&quot;}">
+                          <a id="Academic_research" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/school-leaders/research.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Academic research_nav&quot;,&quot;id&quot;:&quot;n1c6c5c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c6c5c5c1m1r1a1&quot;}">학술 연구</a>
 
                         </li>
+                        <li data-m="{&quot;cN&quot;:&quot;Connected campus and school experiences_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c7c5c5c1m1r1a1&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c5c5c1m1r1a1&quot;}">
+                          <a id="Connected_campus_and_school_experiences" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/school-leaders/campus.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Connected campus and school experiences_nav&quot;,&quot;id&quot;:&quot;n1c7c5c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c7c5c5c1m1r1a1&quot;}">서로 연결된 캠퍼스 및 학교 생활</a>
+
+                        </li>
+                        <li data-m="{&quot;cN&quot;:&quot;Student lifecycle and success management_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c8c5c5c1m1r1a1&quot;,&quot;sN&quot;:8,&quot;aN&quot;:&quot;c5c5c1m1r1a1&quot;}">
+                          <a id="Student_lifecycle_and_success_management" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/school-leaders/lifecycle.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Student lifecycle and success management_nav&quot;,&quot;id&quot;:&quot;n1c8c5c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c8c5c5c1m1r1a1&quot;}">학생 라이프사이클 및 성취도 관리</a>
+
+                        </li>
+                        <li data-m="{&quot;cN&quot;:&quot;Teaching and learning_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c9c5c5c1m1r1a1&quot;,&quot;sN&quot;:9,&quot;aN&quot;:&quot;c5c5c1m1r1a1&quot;}">
+                          <a id="Teaching_and_learning" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/school-leaders/teaching.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Teaching and learning_nav&quot;,&quot;id&quot;:&quot;n1c9c5c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c9c5c5c1m1r1a1&quot;}">교수 및 학습 관리</a>
+
+                        </li>
+
                       </ul>
-
-                    </li>
-
-                  </ul>
-                </div>
-                <div class="c-uhf-menu js-nav-menu" role="none">
-                  <button id="shellmenu_82" aria-expanded="false" aria-haspopup="true" data-m="{&quot;cN&quot;:&quot;CatNav_Students_nonnav&quot;,&quot;id&quot;:&quot;nn8c5c1m1r1a1&quot;,&quot;sN&quot;:8,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}">학생</button>
-                  <ul class="" aria-labelledby="shellmenu_82" aria-hidden="true" data-m="{&quot;cN&quot;:&quot;Students_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c9c5c1m1r1a1&quot;,&quot;sN&quot;:9,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}" role="none">
-                    <li data-m="{&quot;cN&quot;:&quot;Students_Overview_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c1c9c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c9c5c1m1r1a1&quot;}">
-                      <a id="shellmenu_83" class="js-subm-uhf-nav-link" href="http://www.microsoft.com/ko-kr/education/students/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Students_Overview_nav&quot;,&quot;id&quot;:&quot;n1c1c9c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c1c9c5c1m1r1a1&quot;}">학생 개요 및 제공 혜택</a>
-
-                    </li>
-                    <li data-m="{&quot;cN&quot;:&quot;Students_LearnToCode_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c9c5c1m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c9c5c1m1r1a1&quot;}">
-                      <a id="shellmenu_84" class="js-subm-uhf-nav-link" href="http://www.microsoft.com/ko-kr/education/students/code/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Students_LearnToCode_nav&quot;,&quot;id&quot;:&quot;n1c2c9c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c9c5c1m1r1a1&quot;}">코딩 배우기</a>
-
-                    </li>
-                    <li data-m="{&quot;cN&quot;:&quot;Students_CareerOpportunities_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c3c9c5c1m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c9c5c1m1r1a1&quot;}">
-                      <a id="shellmenu_85" class="js-subm-uhf-nav-link" href="http://www.microsoft.com/ko-kr/education/students/opportunities/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Students_CareerOpportunities_nav&quot;,&quot;id&quot;:&quot;n1c3c9c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c3c9c5c1m1r1a1&quot;}">채용 정보</a>
-
-                    </li>
-                    <li data-m="{&quot;cN&quot;:&quot;Students_CareerOpportunities_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c4c9c5c1m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c9c5c1m1r1a1&quot;}">
-                      <a id="shellmenu_86" class="js-subm-uhf-nav-link" href="http://www.microsoft.com/ko-kr/education/students/resources/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Students_CareerOpportunities_nav&quot;,&quot;id&quot;:&quot;n1c4c9c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c4c9c5c1m1r1a1&quot;}">학생 리소스</a>
-
-                    </li>
-
-                  </ul>
-                </div>
-                <div class="c-uhf-menu js-nav-menu" role="none">
-                  <button id="Products" aria-expanded="false" aria-haspopup="true" data-m="{&quot;cN&quot;:&quot;CatNav_Products_nonnav&quot;,&quot;id&quot;:&quot;nn10c5c1m1r1a1&quot;,&quot;sN&quot;:10,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}">제품</button>
-                  <ul class="" aria-labelledby="Products" aria-hidden="true" data-m="{&quot;cN&quot;:&quot;Products_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c11c5c1m1r1a1&quot;,&quot;sN&quot;:11,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}" role="none">
-                    <li data-m="{&quot;cN&quot;:&quot;Products_Overview_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c1c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c11c5c1m1r1a1&quot;}">
-                      <a id="shellmenu_88" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/products/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Products_Overview_nav&quot;,&quot;id&quot;:&quot;n1c1c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c1c11c5c1m1r1a1&quot;}">제품 개요</a>
-
-                    </li>
-                    <li data-m="{&quot;cN&quot;:&quot;Products_AppsForWindows_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c11c5c1m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c11c5c1m1r1a1&quot;}">
-                      <a id="shellmenu_89" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/products/education-apps/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Products_AppsForWindows_nav&quot;,&quot;id&quot;:&quot;n1c2c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c11c5c1m1r1a1&quot;}">Windows 앱</a>
-
-                    </li>
-                    <li data-m="{&quot;cN&quot;:&quot;Products_Intune_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c3c11c5c1m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c11c5c1m1r1a1&quot;}">
-                      <a id="shellmenu_90" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/intune/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Products_Intune_nav&quot;,&quot;id&quot;:&quot;n1c3c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c3c11c5c1m1r1a1&quot;}">Intune</a>
-
-                    </li>
-                    <li data-m="{&quot;cN&quot;:&quot;Products_Office_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c4c11c5c1m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c11c5c1m1r1a1&quot;}">
-                      <a id="shellmenu_91" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/products/office/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Products_Office_nav&quot;,&quot;id&quot;:&quot;n1c4c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c4c11c5c1m1r1a1&quot;}">Office</a>
-
-                    </li>
-                    <li data-m="{&quot;cN&quot;:&quot;Products_OneNote_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c5c11c5c1m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c11c5c1m1r1a1&quot;}">
-                      <a id="shellmenu_92" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/products/onenote/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Products_OneNote_nav&quot;,&quot;id&quot;:&quot;n1c5c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c5c11c5c1m1r1a1&quot;}">OneNote</a>
-
-                    </li>
-                    <li data-m="{&quot;cN&quot;:&quot;Products_Teams_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c6c11c5c1m1r1a1&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c11c5c1m1r1a1&quot;}">
-                      <a id="shellmenu_93" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/products/teams/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Products_Teams_nav&quot;,&quot;id&quot;:&quot;n1c6c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c6c11c5c1m1r1a1&quot;}">Teams</a>
-
-                    </li>
-                    <li data-m="{&quot;cN&quot;:&quot;Products_Windows_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c7c11c5c1m1r1a1&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c11c5c1m1r1a1&quot;}">
-                      <a id="shellmenu_94" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/products/windows/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Products_Windows_nav&quot;,&quot;id&quot;:&quot;n1c7c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c7c11c5c1m1r1a1&quot;}">Windows</a>
-
-                    </li>
-                    <li data-m="{&quot;cN&quot;:&quot;Products_EducationPartnerSolutionsForOffice_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c8c11c5c1m1r1a1&quot;,&quot;sN&quot;:8,&quot;aN&quot;:&quot;c11c5c1m1r1a1&quot;}">
-                      <a id="shellmenu_95" class="js-subm-uhf-nav-link" href="http://www.microsoft.com/ko-kr/education/products/office-365-app/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Products_EducationPartnerSolutionsForOffice_nav&quot;,&quot;id&quot;:&quot;n1c8c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c8c11c5c1m1r1a1&quot;}">교육 솔루션 찾기</a>
-
-                    </li>
-                    <li class="f-sub-menu js-nav-menu" data-m="{&quot;cN&quot;:&quot;Products_MoreProducts_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c9c11c5c1m1r1a1&quot;,&quot;sN&quot;:9,&quot;aN&quot;:&quot;c11c5c1m1r1a1&quot;}">
-
-                      <button id="기타-navigation" aria-expanded="false" data-m="{&quot;cN&quot;:&quot;CatNav_Products_MoreProducts_nonnav&quot;,&quot;id&quot;:&quot;nn1c9c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c9c11c5c1m1r1a1&quot;}">기타</button>
-                      <ul aria-labelledby="기타-navigation" aria-hidden="true" role="none">
-                        <li data-m="{&quot;cN&quot;:&quot;Products_MoreProducts_Minecraft_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c9c11c5c1m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c9c11c5c1m1r1a1&quot;}">
-                          <a id="shellmenu_97" class="js-subm-uhf-nav-link" href="http://education.minecraft.net/" data-m="{&quot;cN&quot;:&quot;CatNav_Products_MoreProducts_Minecraft_nav&quot;,&quot;id&quot;:&quot;n1c2c9c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c9c11c5c1m1r1a1&quot;}">Minecraft: Education Edition</a>
+                    </div>
+                    <div class="c-uhf-menu js-nav-menu" role="none">
+                      <button id="shellmenu_73" aria-expanded="false" aria-haspopup="true" data-m="{&quot;cN&quot;:&quot;CatNav_Educators_nonnav&quot;,&quot;id&quot;:&quot;nn6c5c1m1r1a1&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}">교육자</button>
+                      <ul class="" aria-labelledby="shellmenu_73" aria-hidden="true" data-m="{&quot;cN&quot;:&quot;Educators_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c7c5c1m1r1a1&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}" role="none">
+                        <li data-m="{&quot;cN&quot;:&quot;Educators_Overview_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c1c7c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c7c5c1m1r1a1&quot;}">
+                          <a id="shellmenu_74" class="js-subm-uhf-nav-link" href="http://www.microsoft.com/ko-kr/education/educators/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Educators_Overview_nav&quot;,&quot;id&quot;:&quot;n1c1c7c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c1c7c5c1m1r1a1&quot;}">교육자 개요 및 제공 혜택</a>
 
                         </li>
-                        <li data-m="{&quot;cN&quot;:&quot;Products_MoreProducts_Skypeintheclassroom_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c3c9c11c5c1m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c9c11c5c1m1r1a1&quot;}">
-                          <a id="Products_MoreProducts_Skypeintheclassroom" class="js-subm-uhf-nav-link" href="https://education.microsoft.com/skype-in-the-classroom/overview" data-m="{&quot;cN&quot;:&quot;CatNav_Products_MoreProducts_Skypeintheclassroom_nav&quot;,&quot;id&quot;:&quot;n1c3c9c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c3c9c11c5c1m1r1a1&quot;}">Skype</a>
+                        <li class="f-sub-menu js-nav-menu" data-m="{&quot;cN&quot;:&quot;Educators_EducatorCommunity_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c7c5c1m1r1a1&quot;}">
+
+                          <button id="교육자커뮤니티-navigation" aria-expanded="false" data-m="{&quot;cN&quot;:&quot;CatNav_Educators_EducatorCommunity_nonnav&quot;,&quot;id&quot;:&quot;nn1c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c7c5c1m1r1a1&quot;}">교육자 커뮤니티</button>
+                          <ul aria-labelledby="교육자커뮤니티-navigation" aria-hidden="true" role="none">
+                            <li data-m="{&quot;cN&quot;:&quot;Microsoft Innovative Educator (MIE) programs_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c2c7c5c1m1r1a1&quot;}">
+                              <a id="Microsoft Innovative Educator (MIE) programs" class="js-subm-uhf-nav-link" href="https://education.microsoft.com/microsoft-innovative-educator-programs/mie" data-m="{&quot;cN&quot;:&quot;CatNav_Microsoft Innovative Educator (MIE) programs_nav&quot;,&quot;id&quot;:&quot;n1c2c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c2c7c5c1m1r1a1&quot;}">Microsoft Innovative Educator(MIE) 프로그램</a>
+
+                            </li>
+                            <li data-m="{&quot;cN&quot;:&quot;Badges, points, and certificates_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c3c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c2c7c5c1m1r1a1&quot;}">
+                              <a id="Badges, points, and certificates" class="js-subm-uhf-nav-link" href="https://education.microsoft.com/badges-points-certificates/badges-and-points" data-m="{&quot;cN&quot;:&quot;CatNav_Badges, points, and certificates_nav&quot;,&quot;id&quot;:&quot;n1c3c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c3c2c7c5c1m1r1a1&quot;}">배지, 포인트 및 수료증</a>
+
+                            </li>
+                            <li data-m="{&quot;cN&quot;:&quot;Courses and resources_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c4c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c2c7c5c1m1r1a1&quot;}">
+                              <a id="Courses and resources" class="js-subm-uhf-nav-link" href="https://education.microsoft.com/courses-and-resources/courses" data-m="{&quot;cN&quot;:&quot;CatNav_Courses and resources_nav&quot;,&quot;id&quot;:&quot;n1c4c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c4c2c7c5c1m1r1a1&quot;}">교육 과정 및 리소스</a>
+
+                            </li>
+                            <li data-m="{&quot;cN&quot;:&quot;Skype in the Classroom_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c5c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c2c7c5c1m1r1a1&quot;}">
+                              <a id="Skype in the Classroom" class="js-subm-uhf-nav-link" href="https://education.microsoft.com/skype-in-the-classroom/overview" data-m="{&quot;cN&quot;:&quot;CatNav_Skype in the Classroom_nav&quot;,&quot;id&quot;:&quot;n1c5c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c5c2c7c5c1m1r1a1&quot;}">교실에서의 Skype</a>
+
+                            </li>
+                            <li data-m="{&quot;cN&quot;:&quot;Find, create, and share lessons_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c6c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c2c7c5c1m1r1a1&quot;}">
+                              <a id="Find, create, and share lessons" class="js-subm-uhf-nav-link" href="https://education.microsoft.com/find-create-and-share-a-lesson/lesson-plans" data-m="{&quot;cN&quot;:&quot;CatNav_Find, create, and share lessons_nav&quot;,&quot;id&quot;:&quot;n1c6c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c6c2c7c5c1m1r1a1&quot;}">수업 검색, 생성, 공유</a>
+
+                            </li>
+                            <li data-m="{&quot;cN&quot;:&quot;Connect and share with educators_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c7c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c2c7c5c1m1r1a1&quot;}">
+                              <a id="Connect and share with educators" class="js-subm-uhf-nav-link" href="https://education.microsoft.com/connect-and-share-with-educators/connect-with-other-educators" data-m="{&quot;cN&quot;:&quot;CatNav_Connect and share with educators_nav&quot;,&quot;id&quot;:&quot;n1c7c2c7c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c7c2c7c5c1m1r1a1&quot;}">교육을 통한 교류 및 공유</a>
+
+                            </li>
+                          </ul>
 
                         </li>
-                        <li data-m="{&quot;cN&quot;:&quot;Products_Surface_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c4c9c11c5c1m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c9c11c5c1m1r1a1&quot;}">
-                          <a id="shellmenu_99" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/surface" data-m="{&quot;cN&quot;:&quot;CatNav_Products_Surface_nav&quot;,&quot;id&quot;:&quot;n1c4c9c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c4c9c11c5c1m1r1a1&quot;}">Surface</a>
 
-                        </li>
-                        <li data-m="{&quot;cN&quot;:&quot;Products_MoreProducts_Sway_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c5c9c11c5c1m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c9c11c5c1m1r1a1&quot;}">
-                          <a id="shellmenu_100" class="js-subm-uhf-nav-link" href="https://sway.com/" data-m="{&quot;cN&quot;:&quot;CatNav_Products_MoreProducts_Sway_nav&quot;,&quot;id&quot;:&quot;n1c5c9c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c5c9c11c5c1m1r1a1&quot;}">Sway</a>
-
-                        </li>
                       </ul>
+                    </div>
+                    <div class="c-uhf-menu js-nav-menu" role="none">
+                      <button id="shellmenu_82" aria-expanded="false" aria-haspopup="true" data-m="{&quot;cN&quot;:&quot;CatNav_Students_nonnav&quot;,&quot;id&quot;:&quot;nn8c5c1m1r1a1&quot;,&quot;sN&quot;:8,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}">학생</button>
+                      <ul class="" aria-labelledby="shellmenu_82" aria-hidden="true" data-m="{&quot;cN&quot;:&quot;Students_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c9c5c1m1r1a1&quot;,&quot;sN&quot;:9,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}" role="none">
+                        <li data-m="{&quot;cN&quot;:&quot;Students_Overview_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c1c9c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c9c5c1m1r1a1&quot;}">
+                          <a id="shellmenu_83" class="js-subm-uhf-nav-link" href="http://www.microsoft.com/ko-kr/education/students/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Students_Overview_nav&quot;,&quot;id&quot;:&quot;n1c1c9c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c1c9c5c1m1r1a1&quot;}">학생 개요 및 제공 혜택</a>
 
-                    </li>
+                        </li>
+                        <li data-m="{&quot;cN&quot;:&quot;Students_LearnToCode_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c9c5c1m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c9c5c1m1r1a1&quot;}">
+                          <a id="shellmenu_84" class="js-subm-uhf-nav-link" href="http://www.microsoft.com/ko-kr/education/students/code/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Students_LearnToCode_nav&quot;,&quot;id&quot;:&quot;n1c2c9c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c9c5c1m1r1a1&quot;}">코딩 배우기</a>
 
-                  </ul>
+                        </li>
+                        <li data-m="{&quot;cN&quot;:&quot;Students_CareerOpportunities_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c3c9c5c1m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c9c5c1m1r1a1&quot;}">
+                          <a id="shellmenu_85" class="js-subm-uhf-nav-link" href="http://www.microsoft.com/ko-kr/education/students/opportunities/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Students_CareerOpportunities_nav&quot;,&quot;id&quot;:&quot;n1c3c9c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c3c9c5c1m1r1a1&quot;}">채용 정보</a>
+
+                        </li>
+                        <li data-m="{&quot;cN&quot;:&quot;Students_CareerOpportunities_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c4c9c5c1m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c9c5c1m1r1a1&quot;}">
+                          <a id="shellmenu_86" class="js-subm-uhf-nav-link" href="http://www.microsoft.com/ko-kr/education/students/resources/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Students_CareerOpportunities_nav&quot;,&quot;id&quot;:&quot;n1c4c9c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c4c9c5c1m1r1a1&quot;}">학생 리소스</a>
+
+                        </li>
+
+                      </ul>
+                    </div>
+                    <div class="c-uhf-menu js-nav-menu" role="none">
+                      <button id="Products" aria-expanded="false" aria-haspopup="true" data-m="{&quot;cN&quot;:&quot;CatNav_Products_nonnav&quot;,&quot;id&quot;:&quot;nn10c5c1m1r1a1&quot;,&quot;sN&quot;:10,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}">제품</button>
+                      <ul class="" aria-labelledby="Products" aria-hidden="true" data-m="{&quot;cN&quot;:&quot;Products_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c11c5c1m1r1a1&quot;,&quot;sN&quot;:11,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}" role="none">
+                        <li data-m="{&quot;cN&quot;:&quot;Products_Overview_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c1c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c11c5c1m1r1a1&quot;}">
+                          <a id="shellmenu_88" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/products/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Products_Overview_nav&quot;,&quot;id&quot;:&quot;n1c1c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c1c11c5c1m1r1a1&quot;}">제품 개요</a>
+
+                        </li>
+                        <li data-m="{&quot;cN&quot;:&quot;Products_AppsForWindows_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c11c5c1m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c11c5c1m1r1a1&quot;}">
+                          <a id="shellmenu_89" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/products/education-apps/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Products_AppsForWindows_nav&quot;,&quot;id&quot;:&quot;n1c2c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c11c5c1m1r1a1&quot;}">Windows 앱</a>
+
+                        </li>
+                        <li data-m="{&quot;cN&quot;:&quot;Products_Intune_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c3c11c5c1m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c11c5c1m1r1a1&quot;}">
+                          <a id="shellmenu_90" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/intune/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Products_Intune_nav&quot;,&quot;id&quot;:&quot;n1c3c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c3c11c5c1m1r1a1&quot;}">Intune</a>
+
+                        </li>
+                        <li data-m="{&quot;cN&quot;:&quot;Products_Office_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c4c11c5c1m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c11c5c1m1r1a1&quot;}">
+                          <a id="shellmenu_91" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/products/office/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Products_Office_nav&quot;,&quot;id&quot;:&quot;n1c4c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c4c11c5c1m1r1a1&quot;}">Office</a>
+
+                        </li>
+                        <li data-m="{&quot;cN&quot;:&quot;Products_OneNote_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c5c11c5c1m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c11c5c1m1r1a1&quot;}">
+                          <a id="shellmenu_92" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/products/onenote/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Products_OneNote_nav&quot;,&quot;id&quot;:&quot;n1c5c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c5c11c5c1m1r1a1&quot;}">OneNote</a>
+
+                        </li>
+                        <li data-m="{&quot;cN&quot;:&quot;Products_Teams_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c6c11c5c1m1r1a1&quot;,&quot;sN&quot;:6,&quot;aN&quot;:&quot;c11c5c1m1r1a1&quot;}">
+                          <a id="shellmenu_93" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/products/teams/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Products_Teams_nav&quot;,&quot;id&quot;:&quot;n1c6c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c6c11c5c1m1r1a1&quot;}">Teams</a>
+
+                        </li>
+                        <li data-m="{&quot;cN&quot;:&quot;Products_Windows_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c7c11c5c1m1r1a1&quot;,&quot;sN&quot;:7,&quot;aN&quot;:&quot;c11c5c1m1r1a1&quot;}">
+                          <a id="shellmenu_94" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/products/windows/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Products_Windows_nav&quot;,&quot;id&quot;:&quot;n1c7c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c7c11c5c1m1r1a1&quot;}">Windows</a>
+
+                        </li>
+                        <li data-m="{&quot;cN&quot;:&quot;Products_EducationPartnerSolutionsForOffice_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c8c11c5c1m1r1a1&quot;,&quot;sN&quot;:8,&quot;aN&quot;:&quot;c11c5c1m1r1a1&quot;}">
+                          <a id="shellmenu_95" class="js-subm-uhf-nav-link" href="http://www.microsoft.com/ko-kr/education/products/office-365-app/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Products_EducationPartnerSolutionsForOffice_nav&quot;,&quot;id&quot;:&quot;n1c8c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c8c11c5c1m1r1a1&quot;}">교육 솔루션 찾기</a>
+
+                        </li>
+                        <li class="f-sub-menu js-nav-menu" data-m="{&quot;cN&quot;:&quot;Products_MoreProducts_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c9c11c5c1m1r1a1&quot;,&quot;sN&quot;:9,&quot;aN&quot;:&quot;c11c5c1m1r1a1&quot;}">
+
+                          <button id="기타-navigation" aria-expanded="false" data-m="{&quot;cN&quot;:&quot;CatNav_Products_MoreProducts_nonnav&quot;,&quot;id&quot;:&quot;nn1c9c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c9c11c5c1m1r1a1&quot;}">기타</button>
+                          <ul aria-labelledby="기타-navigation" aria-hidden="true" role="none">
+                            <li data-m="{&quot;cN&quot;:&quot;Products_MoreProducts_Minecraft_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c9c11c5c1m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c9c11c5c1m1r1a1&quot;}">
+                              <a id="shellmenu_97" class="js-subm-uhf-nav-link" href="http://education.minecraft.net/" data-m="{&quot;cN&quot;:&quot;CatNav_Products_MoreProducts_Minecraft_nav&quot;,&quot;id&quot;:&quot;n1c2c9c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c9c11c5c1m1r1a1&quot;}">Minecraft: Education Edition</a>
+
+                            </li>
+                            <li data-m="{&quot;cN&quot;:&quot;Products_MoreProducts_Skypeintheclassroom_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c3c9c11c5c1m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c9c11c5c1m1r1a1&quot;}">
+                              <a id="Products_MoreProducts_Skypeintheclassroom" class="js-subm-uhf-nav-link" href="https://education.microsoft.com/skype-in-the-classroom/overview" data-m="{&quot;cN&quot;:&quot;CatNav_Products_MoreProducts_Skypeintheclassroom_nav&quot;,&quot;id&quot;:&quot;n1c3c9c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c3c9c11c5c1m1r1a1&quot;}">Skype</a>
+
+                            </li>
+                            <li data-m="{&quot;cN&quot;:&quot;Products_Surface_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c4c9c11c5c1m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c9c11c5c1m1r1a1&quot;}">
+                              <a id="shellmenu_99" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/surface" data-m="{&quot;cN&quot;:&quot;CatNav_Products_Surface_nav&quot;,&quot;id&quot;:&quot;n1c4c9c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c4c9c11c5c1m1r1a1&quot;}">Surface</a>
+
+                            </li>
+                            <li data-m="{&quot;cN&quot;:&quot;Products_MoreProducts_Sway_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c5c9c11c5c1m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c9c11c5c1m1r1a1&quot;}">
+                              <a id="shellmenu_100" class="js-subm-uhf-nav-link" href="https://sway.com/" data-m="{&quot;cN&quot;:&quot;CatNav_Products_MoreProducts_Sway_nav&quot;,&quot;id&quot;:&quot;n1c5c9c11c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c5c9c11c5c1m1r1a1&quot;}">Sway</a>
+
+                            </li>
+                          </ul>
+
+                        </li>
+
+                      </ul>
+                    </div>
+                    <div class="c-uhf-menu js-nav-menu" role="none">
+                      <button id="shellmenu_101" aria-expanded="false" aria-haspopup="true" data-m="{&quot;cN&quot;:&quot;CatNav_TrainingAndEvents_nonnav&quot;,&quot;id&quot;:&quot;nn12c5c1m1r1a1&quot;,&quot;sN&quot;:12,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}">트레이닝</button>
+                      <ul class="" aria-labelledby="shellmenu_101" aria-hidden="true" data-m="{&quot;cN&quot;:&quot;TrainingAndEvents_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c13c5c1m1r1a1&quot;,&quot;sN&quot;:13,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}"
+                        role="none">
+                        <li data-m="{&quot;cN&quot;:&quot;TrainingAndEvents_Overview_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c1c13c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c13c5c1m1r1a1&quot;}">
+                          <a id="shellmenu_102" class="js-subm-uhf-nav-link" href="http://www.microsoft.com/ko-kr/education/training-and-events/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_TrainingAndEvents_Overview_nav&quot;,&quot;id&quot;:&quot;n1c1c13c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c1c13c5c1m1r1a1&quot;}">교육 및 이벤트 개요</a>
+
+                        </li>
+                        <li data-m="{&quot;cN&quot;:&quot;TrainingAndEvents_CalendarOfEvents_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c13c5c1m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c13c5c1m1r1a1&quot;}">
+                          <a id="shellmenu_103" class="js-subm-uhf-nav-link" href="http://www.microsoft.com/ko-kr/education/training-and-events/events-calendar/default.aspx#eventSector=Education" data-m="{&quot;cN&quot;:&quot;CatNav_TrainingAndEvents_CalendarOfEvents_nav&quot;,&quot;id&quot;:&quot;n1c2c13c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c13c5c1m1r1a1&quot;}">이벤트 일정</a>
+
+                        </li>
+                        <li data-m="{&quot;cN&quot;:&quot;TrainingAndEvents_OnDemand_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c3c13c5c1m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c13c5c1m1r1a1&quot;}">
+                          <a id="shellmenu_104" class="js-subm-uhf-nav-link" href="https://education.microsoft.com/courses-and-resources" data-m="{&quot;cN&quot;:&quot;CatNav_TrainingAndEvents_OnDemand_nav&quot;,&quot;id&quot;:&quot;n1c3c13c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c3c13c5c1m1r1a1&quot;}">맞춤형 교육</a>
+
+                        </li>
+                        <li data-m="{&quot;cN&quot;:&quot;Findatrainer_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c4c13c5c1m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c13c5c1m1r1a1&quot;}">
+                          <a id="Findatrainer" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/training-and-events/trainers/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Findatrainer_nav&quot;,&quot;id&quot;:&quot;n1c4c13c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c4c13c5c1m1r1a1&quot;}">교육 담당자 찾기</a>
+
+                        </li>
+                        <li data-m="{&quot;cN&quot;:&quot;ITAcademy_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c5c13c5c1m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c13c5c1m1r1a1&quot;}">
+                          <a id="shellmenu_106" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/imagine-academy/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_ITAcademy_nav&quot;,&quot;id&quot;:&quot;n1c5c13c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c5c13c5c1m1r1a1&quot;}">Imagine Academy</a>
+
+                        </li>
+
+                      </ul>
+                    </div><a id="shellmenu_107" class="c-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/stories/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Stories_nav&quot;,&quot;id&quot;:&quot;n14c5c1m1r1a1&quot;,&quot;sN&quot;:14,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}">사례</a>
+                    <div class="c-uhf-menu js-nav-menu" role="none">
+                      <button id="shellmenu_108" aria-expanded="false" aria-haspopup="true" data-m="{&quot;cN&quot;:&quot;CatNav_HowToBuy_nonnav&quot;,&quot;id&quot;:&quot;nn15c5c1m1r1a1&quot;,&quot;sN&quot;:15,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}" class="">구입 방법</button>
+                      <ul class="" aria-labelledby="shellmenu_108" aria-hidden="true" data-m="{&quot;cN&quot;:&quot;HowToBuy_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c16c5c1m1r1a1&quot;,&quot;sN&quot;:16,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}" role="none">
+                        <li data-m="{&quot;cN&quot;:&quot;HowtoBuyOverview_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c1c16c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c16c5c1m1r1a1&quot;}">
+                          <a id="HowtoBuyOverview" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/buy-license/overview-of-how-to-buy/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_HowtoBuyOverview_nav&quot;,&quot;id&quot;:&quot;n1c1c16c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c1c16c5c1m1r1a1&quot;}">구입 방법</a>
+
+                        </li>
+                        <li data-m="{&quot;cN&quot;:&quot;Microsoft365_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c16c5c1m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c16c5c1m1r1a1&quot;}">
+                          <a id="Microsoft365" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/buy-license/microsoft365/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Microsoft365_nav&quot;,&quot;id&quot;:&quot;n1c2c16c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c16c5c1m1r1a1&quot;}">Microsoft 365</a>
+
+                        </li>
+
+                      </ul>
+                    </div>
+                  </nav>
+
                 </div>
-                <div class="c-uhf-menu js-nav-menu" role="none">
-                  <button id="shellmenu_101" aria-expanded="false" aria-haspopup="true" data-m="{&quot;cN&quot;:&quot;CatNav_TrainingAndEvents_nonnav&quot;,&quot;id&quot;:&quot;nn12c5c1m1r1a1&quot;,&quot;sN&quot;:12,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}">트레이닝</button>
-                  <ul class="" aria-labelledby="shellmenu_101" aria-hidden="true" data-m="{&quot;cN&quot;:&quot;TrainingAndEvents_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c13c5c1m1r1a1&quot;,&quot;sN&quot;:13,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}"
-                    role="none">
-                    <li data-m="{&quot;cN&quot;:&quot;TrainingAndEvents_Overview_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c1c13c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c13c5c1m1r1a1&quot;}">
-                      <a id="shellmenu_102" class="js-subm-uhf-nav-link" href="http://www.microsoft.com/ko-kr/education/training-and-events/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_TrainingAndEvents_Overview_nav&quot;,&quot;id&quot;:&quot;n1c1c13c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c1c13c5c1m1r1a1&quot;}">교육 및 이벤트 개요</a>
 
-                    </li>
-                    <li data-m="{&quot;cN&quot;:&quot;TrainingAndEvents_CalendarOfEvents_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c13c5c1m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c13c5c1m1r1a1&quot;}">
-                      <a id="shellmenu_103" class="js-subm-uhf-nav-link" href="http://www.microsoft.com/ko-kr/education/training-and-events/events-calendar/default.aspx#eventSector=Education" data-m="{&quot;cN&quot;:&quot;CatNav_TrainingAndEvents_CalendarOfEvents_nav&quot;,&quot;id&quot;:&quot;n1c2c13c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c13c5c1m1r1a1&quot;}">이벤트 일정</a>
 
-                    </li>
-                    <li data-m="{&quot;cN&quot;:&quot;TrainingAndEvents_OnDemand_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c3c13c5c1m1r1a1&quot;,&quot;sN&quot;:3,&quot;aN&quot;:&quot;c13c5c1m1r1a1&quot;}">
-                      <a id="shellmenu_104" class="js-subm-uhf-nav-link" href="https://education.microsoft.com/courses-and-resources" data-m="{&quot;cN&quot;:&quot;CatNav_TrainingAndEvents_OnDemand_nav&quot;,&quot;id&quot;:&quot;n1c3c13c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c3c13c5c1m1r1a1&quot;}">맞춤형 교육</a>
 
-                    </li>
-                    <li data-m="{&quot;cN&quot;:&quot;Findatrainer_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c4c13c5c1m1r1a1&quot;,&quot;sN&quot;:4,&quot;aN&quot;:&quot;c13c5c1m1r1a1&quot;}">
-                      <a id="Findatrainer" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/training-and-events/trainers/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Findatrainer_nav&quot;,&quot;id&quot;:&quot;n1c4c13c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c4c13c5c1m1r1a1&quot;}">교육 담당자 찾기</a>
+              </div>
 
-                    </li>
-                    <li data-m="{&quot;cN&quot;:&quot;ITAcademy_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c5c13c5c1m1r1a1&quot;,&quot;sN&quot;:5,&quot;aN&quot;:&quot;c13c5c1m1r1a1&quot;}">
-                      <a id="shellmenu_106" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/imagine-academy/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_ITAcademy_nav&quot;,&quot;id&quot;:&quot;n1c5c13c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c5c13c5c1m1r1a1&quot;}">Imagine Academy</a>
 
-                    </li>
+            </header>
 
-                  </ul>
-                </div><a id="shellmenu_107" class="c-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/stories/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Stories_nav&quot;,&quot;id&quot;:&quot;n14c5c1m1r1a1&quot;,&quot;sN&quot;:14,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}">사례</a>
-                <div
-                  class="c-uhf-menu js-nav-menu" role="none">
-                  <button id="shellmenu_108" aria-expanded="false" aria-haspopup="true" data-m="{&quot;cN&quot;:&quot;CatNav_HowToBuy_nonnav&quot;,&quot;id&quot;:&quot;nn15c5c1m1r1a1&quot;,&quot;sN&quot;:15,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}" class="">구입 방법</button>
-                  <ul class="" aria-labelledby="shellmenu_108" aria-hidden="true" data-m="{&quot;cN&quot;:&quot;HowToBuy_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c16c5c1m1r1a1&quot;,&quot;sN&quot;:16,&quot;aN&quot;:&quot;c5c1m1r1a1&quot;}" role="none">
-                    <li data-m="{&quot;cN&quot;:&quot;HowtoBuyOverview_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c1c16c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c16c5c1m1r1a1&quot;}">
-                      <a id="HowtoBuyOverview" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/buy-license/overview-of-how-to-buy/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_HowtoBuyOverview_nav&quot;,&quot;id&quot;:&quot;n1c1c16c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c1c16c5c1m1r1a1&quot;}">구입 방법</a>
-
-                    </li>
-                    <li data-m="{&quot;cN&quot;:&quot;Microsoft365_cont&quot;,&quot;cT&quot;:&quot;Container&quot;,&quot;id&quot;:&quot;c2c16c5c1m1r1a1&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c16c5c1m1r1a1&quot;}">
-                      <a id="Microsoft365" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/ko-kr/education/buy-license/microsoft365/default.aspx" data-m="{&quot;cN&quot;:&quot;CatNav_Microsoft365_nav&quot;,&quot;id&quot;:&quot;n1c2c16c5c1m1r1a1&quot;,&quot;sN&quot;:1,&quot;aN&quot;:&quot;c2c16c5c1m1r1a1&quot;}">Microsoft 365</a>
-
-                    </li>
-
-                  </ul>
-            </div>
-            </nav>
 
           </div>
-
-
-
         </div>
 
+      </section>
 
-        </header>
-
-
-  </div>
-  </div>
-
-  </section>
-
-  </header>
+    </header>
 
 
-  <div class="sticky-navbar">
-    <div class="container-fluid">
-      <button type="button" class="btn navbar-community-toggle navbar-community-anonymous" id="menu-toggle" title="Community menu">
+    <div class="sticky-navbar">
+      <div class="container-fluid">
+        <button type="button" class="btn navbar-community-toggle navbar-community-anonymous" id="menu-toggle" title="Community menu">
 
                             <img class="icon-menu-bars" src="./index_files/icon-menu.png">
                             <!-- Comment prevents space between inline elements
@@ -1355,93 +1385,92 @@
 
 
 
-      <div class="chatbot-container hidden-xs hidden-sm">
-        <img id="cb-avatar-bot" src="./index_files/chatbot-avatar.png">
-        <div class="cb-button-container">
-          <button id="mec-chat-button" class="btn btn-outline js-click-chatbot-toggle"><span class="mec-chat-button-text">Hi, how can I assist you today?</span></button>
-        </div>
+        <div class="chatbot-container hidden-xs hidden-sm">
+          <img id="cb-avatar-bot" src="./index_files/chatbot-avatar.png">
+          <div class="cb-button-container">
+            <button id="mec-chat-button" class="btn btn-outline js-click-chatbot-toggle"><span class="mec-chat-button-text">Hi, how can I assist you today?</span></button>
+          </div>
 
-        <div id="mec-chatbot" class="cb-panel-container" style="height: 1067.4px;">
+          <div id="mec-chatbot" class="cb-panel-container" style="height: 1067.4px;">
 
-          <div id="uxMecChatBot">
-            <div data-reactroot="" class="wc-app">
-              <div class="wc-app-left-container">
-                <div class="wc-chatview-panel">
-                  <div class="wc-header"><span class="btn btn-sm chat-close-button js-click-chat-close">X</span></div>
-                  <div class="wc-message-groups">
-                    <div class="wc-message-group">
-                      <div class="wc-message-group-content"></div>
+            <div id="uxMecChatBot">
+              <div data-reactroot="" class="wc-app">
+                <div class="wc-app-left-container">
+                  <div class="wc-chatview-panel">
+                    <div class="wc-header"><span class="btn btn-sm chat-close-button js-click-chat-close">X</span></div>
+                    <div class="wc-message-groups">
+                      <div class="wc-message-group">
+                        <div class="wc-message-group-content"></div>
+                      </div>
                     </div>
+                    <div class="wc-console"><label class="wc-upload"><input type="file" multiple=""><svg width="26" height="18"><path d="M 19.9603965 4.789052 m -2 0 a 2 2 0 0 1 4 0 a 2 2 0 0 1 -4 0 z M 8.3168322 4.1917918 L 2.49505 15.5342575 L 22.455446 15.5342575 L 17.465347 8.5643945 L 14.4158421 11.1780931 L 8.3168322 4.1917918 Z M 1.04 1 L 1.04 17 L 24.96 17 L 24.96 1 L 1.04 1 Z M 1.0352753 0 L 24.9647247 0 C 25.5364915 0 26 0.444957 26 0.9934084 L 26 17.006613 C 26 17.5552514 25.5265266 18 24.9647247 18 L 1.0352753 18 C 0.4635085 18 0 17.5550644 0 17.006613 L 0 0.9934084 C 0 0.44477 0.4734734 0 1.0352753 0 Z"></path></svg></label>
+                      <div class="wc-textbox"><input type="text" value="" placeholder="Type your message..."></div><label class="wc-send"><svg width="27" height="18"><path d="M 26.7862876 9.3774996 A 0.3121028 0.3121028 0 0 0 26.7862876 8.785123 L 0.4081408 0.0226012 C 0.363153 0.0000109 0.3406591 0.0000109 0.3181652 0.0000109 C 0.1372585 0.0000109 0 0.1315165 0 0.2887646 C 0 0.3270384 0.0081316 0.3668374 0.0257445 0.4066363 L 3.4448168 9.0813113 L 0.0257445 17.7556097 A 0.288143 0.288143 0 0 0 0.0126457 17.7975417 A 0.279813 0.279813 0 0 0 0.0055133 17.8603089 C 0.0055133 18.0178895 0.138422 18.1590562 0.303205 18.1590562 A 0.3049569 0.3049569 0 0 0 0.4081408 18.1400213 L 26.7862876 9.3774996 Z M 0.8130309 0.7906714 L 24.8365128 8.7876374 L 3.9846704 8.7876374 L 0.8130309 0.7906714 Z M 3.9846704 9.3749852 L 24.8365128 9.3749852 L 0.8130309 17.3719511 L 3.9846704 9.3749852 Z"></path></svg></label></div>
                   </div>
-                  <div class="wc-console"><label class="wc-upload"><input type="file" multiple=""><svg width="26" height="18"><path d="M 19.9603965 4.789052 m -2 0 a 2 2 0 0 1 4 0 a 2 2 0 0 1 -4 0 z M 8.3168322 4.1917918 L 2.49505 15.5342575 L 22.455446 15.5342575 L 17.465347 8.5643945 L 14.4158421 11.1780931 L 8.3168322 4.1917918 Z M 1.04 1 L 1.04 17 L 24.96 17 L 24.96 1 L 1.04 1 Z M 1.0352753 0 L 24.9647247 0 C 25.5364915 0 26 0.444957 26 0.9934084 L 26 17.006613 C 26 17.5552514 25.5265266 18 24.9647247 18 L 1.0352753 18 C 0.4635085 18 0 17.5550644 0 17.006613 L 0 0.9934084 C 0 0.44477 0.4734734 0 1.0352753 0 Z"></path></svg></label>
-                    <div
-                      class="wc-textbox"><input type="text" value="" placeholder="Type your message..."></div><label class="wc-send"><svg width="27" height="18"><path d="M 26.7862876 9.3774996 A 0.3121028 0.3121028 0 0 0 26.7862876 8.785123 L 0.4081408 0.0226012 C 0.363153 0.0000109 0.3406591 0.0000109 0.3181652 0.0000109 C 0.1372585 0.0000109 0 0.1315165 0 0.2887646 C 0 0.3270384 0.0081316 0.3668374 0.0257445 0.4066363 L 3.4448168 9.0813113 L 0.0257445 17.7556097 A 0.288143 0.288143 0 0 0 0.0126457 17.7975417 A 0.279813 0.279813 0 0 0 0.0055133 17.8603089 C 0.0055133 18.0178895 0.138422 18.1590562 0.303205 18.1590562 A 0.3049569 0.3049569 0 0 0 0.4081408 18.1400213 L 26.7862876 9.3774996 Z M 0.8130309 0.7906714 L 24.8365128 8.7876374 L 3.9846704 8.7876374 L 0.8130309 0.7906714 Z M 3.9846704 9.3749852 L 24.8365128 9.3749852 L 0.8130309 17.3719511 L 3.9846704 9.3749852 Z"></path></svg></label></div>
+                </div>
               </div>
             </div>
+
           </div>
         </div>
-
-      </div>
-    </div>
-    <div class="navbar-signin-container" data-info-box-target="sign-in-reminder" data-info-box-template="sign-in-reminder-content" data-original-title="" title="">
-      <ul class="nav navbar-nav navbar-signin">
-        <li>
-          <a href="https://education.microsoft.com/microsoft-innovative-educator-programs/mie#" class="btn btn-signin" data-toggle="modal" data-target="#SignInModal" data-mode="auth" style="outline: none;">
+        <div class="navbar-signin-container" data-info-box-target="sign-in-reminder" data-info-box-template="sign-in-reminder-content" data-original-title="" title="">
+          <ul class="nav navbar-nav navbar-signin">
+            <li>
+              <a href="https://education.microsoft.com/microsoft-innovative-educator-programs/mie#" class="btn btn-signin" data-toggle="modal" data-target="#SignInModal" data-mode="auth" style="outline: none;">
                                             로그인
                                         </a>
-        </li>
-        <li role="separator" class="divider-vertical"></li>
-        <li>
-          <div class="notamember">
-            Not a Member?
-            <a href="https://education.microsoft.com/microsoft-innovative-educator-programs/mie#" class="btn btn-join" data-toggle="modal" data-target="#SignInModal" data-mode="register" style="outline: none;">
+            </li>
+            <li role="separator" class="divider-vertical"></li>
+            <li>
+              <div class="notamember">
+                Not a Member?
+                <a href="https://education.microsoft.com/microsoft-innovative-educator-programs/mie#" class="btn btn-join" data-toggle="modal" data-target="#SignInModal" data-mode="register" style="outline: none;">
                                                 Join Now
                                             </a>
-          </div>
-        </li>
-        <li>
-          <img class="badge-mec-member" src="./index_files/Community-Member-Badge.png" height="51" alt="MEC Member">
-        </li>
-      </ul>
+              </div>
+            </li>
+            <li>
+              <img class="badge-mec-member" src="./index_files/Community-Member-Badge.png" height="51" alt="MEC Member">
+            </li>
+          </ul>
 
-      <template id="sign-in-reminder-content" type="text/template"></template>
-    </div>
+          <template id="sign-in-reminder-content" type="text/template"></template>
+        </div>
 
-    <div class="hidden-xs hidden-sm hidden-md navbar-right navbar-help-and-translate" id="navbar-sticky">
-      <ul class="nav navbar-nav navbar-sticky">
-        <li>
-          <a href="https://education.microsoft.com/Main/FAQ">
+        <div class="hidden-xs hidden-sm hidden-md navbar-right navbar-help-and-translate" id="navbar-sticky">
+          <ul class="nav navbar-nav navbar-sticky">
+            <li>
+              <a href="https://education.microsoft.com/Main/FAQ">
                                         <span class="glyphicon glyphicon-question-sign"></span>
                                         Community Support
                                     </a>
-        </li>
-        <li>
-          <a href="javascript:void(0)" class="microsoft-translator-widget-container" style="line-height: 39px; min-width:79px; padding:0 12px;">
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="microsoft-translator-widget-container" style="line-height: 39px; min-width:79px; padding:0 12px;">
                                         <span class="glyphicon glyphicon-globe"></span>
                                         <div id="MicrosoftTranslatorWidget" translate="no" style="background-color: transparent;"><div id="WidgetLauncher" style="direction: ltr;"><div id="LauncherTranslatePhrase" class="WidgetEnabled" style="background-color: rgba(0, 0, 0, 0);" title="Translate To English"><span id="TranslateSpan">TRANSLATE</span></div><div id="LauncherLogo" class="WithPhraseAfter"><a id="LauncherLogoLink" href="https://www.bing.com/translator" target="_blank" title="//www.bing.com/translator"><img id="LauncherLogoImage" src="./index_files/binglogo_light.png"></a></div>
-  </div>
-  </div>
-  <script type="text/javascript">
-    setTimeout(function() {
-      {
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.charset = 'UTF-8';
-        s.src = ((location &&
-              location.href &&
-              location.href.indexOf('https') == 0) ?
-            'https://ssl.microsofttranslator.com' :
-            'http://www.microsofttranslator.com') +
-          '/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**&ctf=True&ui=true&settings=Manual&from=';
-        var p = document.getElementsByTagName('head')[0] ||
-          document.documentElement;
-        p.insertBefore(s, p.firstChild);
-      }
-    }, 0);
-  </script>
-  </a>
-  </li>
-  </ul>
+      </div>
+    </div>
+    <script type="text/javascript">
+      setTimeout(function() {
+        {
+          var s = document.createElement('script');
+          s.type = 'text/javascript';
+          s.charset = 'UTF-8';
+          s.src = ((location &&
+                location.href &&
+                location.href.indexOf('https') == 0) ?
+              'https://ssl.microsofttranslator.com' :
+              'http://www.microsofttranslator.com') +
+            '/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**&ctf=True&ui=true&settings=Manual&from=';
+          var p = document.getElementsByTagName('head')[0] ||
+            document.documentElement;
+          p.insertBefore(s, p.firstChild);
+        }
+      }, 0);
+    </script>
+    </a>
+    </li>
+    </ul>
   </div>
 
   <ul class="hidden-xs nav navbar-nav navbar-notification navbar-right">
@@ -1576,100 +1605,29 @@
 
   <div class="page-content" style="">
 
-
-
-
-
     <div id="story" dir="ltr" class="category-mieprograms">
+        <section id="kh_hs_back">&nbsp;
+          <div class="col-xs-12 wysiwyg-generated-content content" data-field="Html" data-placeholder="Enter copy block...">
+            <p class="" style="text-align: center; font-size : 2.5rem;">마이크로소프트 인증 혁신 교사</p>
+            <h2 style="text-align: center; font-size : 6.5rem;">Certified MIE</h2>
+          </div>
+        </section>
 
+<!--
       <div class="module" data-module-id="8ff3646e-8617-b3ba-21c9-f5beeea58eaf" data-module-type="Header" id="8ff3646e-8617-b3ba-21c9-f5beeea58eaf">
         <div class="module-content">
 
           <section class="jumbotron jumbotron-ez jumbotron-story-header jumbotron-story-header-default">
 
-            <div class="jumbotron-bg-image hidden-xs" data-field="BgImageUrl" style="background-image:url(https://az801952.vo.msecnd.net/uploads/5d7b9cff-2922-4860-9243-a2db767c6ba1.png)"></div>
-            <div class="jumbotron-bg-image visible-xs" style="background-image:url(https://az801952.vo.msecnd.net/uploads/e14cf59e-aad5-4bad-8718-b48fd5fcffdb.png)"></div>
+            <div class="jumbotron-bg-image hidden-xs" data-field="BgImageUrl" style="background-image:url(./images/header.jpeg)"></div>
+            <div class="jumbotron-bg-image visible-xs" style="background-image:url(./images/header.jpeg)"></div>
             <div class="overlay overlay-gradient"></div>
-            <div class="container">
-              <ol class="breadcrumb">
-                <li><a href="https://education.microsoft.com/">홈</a></li>
-                <li class="story-category-name"><a href="https://education.microsoft.com/microsoft-innovative-educator-programs">Microsoft Innovative Educator (MIE) 프로그램</a></li>
-                <li class="story-sub-category-name">MIE</li>
-                <li class="story-type-name hidden">Microsoft Innovative Educator (MIE ) Programs - MIE </li>
-              </ol>
-              <h2 class="title" data-field="Title"><p style="text-align: center;">Become a Microsoft Innovative Educator</p></h2>
-              <div class="subtitle wysiwyg-generated-content" data-field="Html">
-                <p style="text-align: center;" class="">열정적인 교사들과의 전문적인 네트워크에 합류해 교육에 새로운 기술을 적용하는 방법을 배우며 성장하세요</p>
-              </div>
+            <div class="container" style="text-align: center;">
+              <p class="title" data-field="Title" style="text-align: center;">Certified MIE</p>
             </div>
           </section>
         </div>
-        <div class="bdo-display bdo-display-metrics-toolbar" dir="ltr">
-          <div class="metrics-toolbar" style="background: rgb(238, 238, 238); min-height: 0px;">
-            <div class="container">
-              <ul class="metrics list-inline pull-right" style="height: 40px;">
-                <li style="line-height: 40px;">
-                  <a href="https://education.microsoft.com/microsoft-innovative-educator-programs/mie#" style="line-height: 40px;">
-
-                            <span class="ezicon ezicon-favorite  requires-authentication disabled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add page to favorites"></span>
-                            <span class="sr-only">Add page to favorites</span>
-                        </a>
-                </li>
-
-
-
-
-
-
-                <li class="story-tag-list hidden metrics-content-link" style="line-height: 40px;">
-                  <a href="https://education.microsoft.com/microsoft-innovative-educator-programs/mie#" style="line-height: 40px;">
-                            <span class="glyphicon glyphicon-tag" data-toggle="tooltip" data-placement="top" title="" data-original-title="태그"></span>
-                            <span class="sr-only">태그</span>
-                            <span class="tag-count">0</span>
-                        </a>
-                  <div class="metrics-content story-tag-container hidden"></div>
-                </li>
-
-                <li class="share-list-item metrics-content-link" style="line-height: 40px;">
-                  <a href="https://education.microsoft.com/microsoft-innovative-educator-programs/mie#" style="line-height: 40px;">
-                            <span class="ezicon ezicon-share" data-toggle="tooltip" data-placement="top" title="" data-original-title="공유하기 "></span>
-                            <span class="sr-only">공유하기 </span>
-
-                        </a>
-                  <div class="metrics-content share-container hidden">
-                    <ul class="list-inline list-sharebuttons">
-                      <li class="facebook">
-                        <a target="_blank" href="https://education.microsoft.com/microsoft-innovative-educator-programs/mie" onclick="openShare(&#39;https://www.facebook.com/dialog/feed?app_id=952797794779152&amp;link=https%3a%2f%2feducation.microsoft.com%2fmicrosoft-innovative-educator-programs%2fmie%3fid%3de9a69317-3a95-45ad-9efc-f29e846729e1&amp;display=popup&amp;redirect_uri=https%3a%2f%2feducation.microsoft.com%2fclosefacebook.aspx&#39;); TrackShareActivity(&#39;iQAaQ&#39;, &#39;Facebook&#39;);">
-                                        <span class="ezicon ezicon-facebook-box" data-toggle="tooltip" data-placement="top" title="" data-original-title="페이스북 "></span>
-                                        <span class="sr-only">페이스북 </span>
-                                    </a>
-                      </li>
-                      <li class="twitter">
-                        <a href="https://twitter.com/intent/tweet?text=Microsoft+Innovative+Educator+(MIE+)+Programs+-+MIE++++++++++++%0A&amp;url=https%3a%2f%2feducation.microsoft.com%2fmicrosoft-innovative-educator-programs%2fmie&amp;via=MicrosoftEDU&amp;source=webclient" onclick="openShare(&#39;https://twitter.com/intent/tweet?text=Microsoft+Innovative+Educator+(MIE+)+Programs+-+MIE++++++++++++%0A&amp;url=https%3a%2f%2feducation.microsoft.com%2fmicrosoft-innovative-educator-programs%2fmie&amp;via=MicrosoftEDU&amp;source=webclient&#39;); TrackShareActivity(&#39;iQAaQ&#39;, &#39;Twitter&#39;);">
-                                        <span class="ezicon ezicon-twitter-box" data-toggle="tooltip" data-placement="top" title="" data-original-title="트위터"></span>
-                                        <span class="sr-only">트위터</span>
-                                    </a>
-                      </li>
-                      <li class="linkedin">
-                        <a href="https://education.microsoft.com/microsoft-innovative-educator-programs/mie#" onclick="openShare(&#39;https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2feducation.microsoft.com%2fmicrosoft-innovative-educator-programs%2fmie&amp;title=Microsoft+Innovative+Educator+(MIE+)+Programs+-+MIE++++++++++++&amp;summary=&#39;); TrackShareActivity(&#39;iQAaQ&#39;, &#39;LinkedIn&#39;);">
-                                        <span class="ezicon ezicon-linkedin-box" data-toggle="tooltip" data-placement="top" title="" data-original-title="링크인 "></span>
-                                        <span class="sr-only">링크인 </span>
-                                    </a>
-                      </li>
-                      <li class="email">
-                        <a href="https://education.microsoft.com/microsoft-innovative-educator-programs/mie#" target="_top" onclick="window.location.href = &#39;mailto:?subject=MS 교육자 커뮤니티 자원&amp;body=안녕하세요!%20%2D%0D%0D이 자원을 MS 교육자 커뮤니티, Microsoft%20Innovative%20Educator%20(MIE%20)%20Programs%20-%20MIE%20%20%20%20%20%20%20%20%20%20%20%20, 영감, 공개 프로세스 로 체크하면 여기에서 보실 수 있습니다.  %20https://education.microsoft.com/microsoft-innovative-educator-programs/mie%0D%0D감사합니다%0D%0DGuest%20User&#39;; TrackShareActivity(&#39;iQAaQ&#39;, &#39;Email&#39;); return true;">
-                                        <span class="ezicon ezicon-mailbox" data-toggle="tooltip" data-placement="top" title="" data-original-title="이메일"></span>
-                                        <span class="sr-only">이메일</span>
-                                    </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      </div> -->
       <div class="module" data-module-id="259f2fd8-859d-337d-d3f3-42fde446118b" data-module-type="Text" id="259f2fd8-859d-337d-d3f3-42fde446118b">
         <div class="module-content">
 
@@ -1684,22 +1642,32 @@
                 <div class="col-xs-12 wysiwyg-generated-content" data-field="Html" data-placeholder="Enter copy block...">
                   <p class="" style="text-align: center;"><img src="./index_files/8c06d24b-e39b-4b77-9604-0c10d6587b2b.jpg"></p>
                   <p class="" style="text-align: center;"><br></p>
-                  <p class="" style="text-align: center;" rel="text-align: center;">우측 상단의 "Join Now"를 클릭해 가입할 때 프로모션 코드를 입력해 1500점을 받고 </p>
-                  <p class="" style="text-align: center;">마이크로소프트 인증 혁신 교사(Certified MIE)가 되어보세요</p>
+                  <p class="" style="text-align: center; font-size : 2em;"><b>마이크로소프트 인증 혁신 교사</b></p>
+                  <hr style="width : 25%; height:2px;border:none;color:#000;background-color:#000;" />
                   <p class="" style="text-align: center;"><br></p>
-                  <p class="" style="text-align: center;">다음과 같은 혜택들을 누릴 수 있습니다.</p>
+                  <p class="" style="text-align: center;">더 나은 교육을 위해 전 세계의 열정적인 교육자들이 함께하는 <br /><b>전문적인 학습 네트워크</b>에 참여하는 첫 단계입니다</p>
                 </div>
               </div>
             </div>
           </section>
         </div>
       </div>
+      <section id="kh_middle">&nbsp;
+      </section>
       <div class="module" data-module-id="5b6d2369-9956-2615-4b9f-5f63014fc892" data-module-type="Text" id="5b6d2369-9956-2615-4b9f-5f63014fc892">
         <div class="module-content">
 
           <section class="story-section story-text background-light-gray">
             <div class="container">
               <div class="row">
+                <div class="col-xs-12 wysiwyg-generated-content" data-field="Html" data-placeholder="Enter copy block...">
+                  <p class="" style="text-align: center; font-size : 2em; text-decoration: underline;">마이크로소프트 인증 혁신 교사들을 위한 혜택</p>
+                  <p class="" style="text-align: center;"><br></p>
+                  <p class="" style="text-align: center; font-size : 2em;">“회원가입을 하고 프로모션 코드 입력과 강의 수강을 통해 1000점을 모아 <br /><b>마이크로소프트 인증 혁신 교사(Certified MIE)</b>가 되어보세요”</p>
+                  <hr style="width : 25%; height:2px;border:none;color:#000;background-color:#000;" />
+                  <p class="" style="text-align: center;"><br></p>
+                  <p class="" style="text-align: center;">더 나은 교육을 위해 전 세계의 열정적인 교육자들이 함께하는 <br /><b>전문적인 학습 네트워크</b>에 참여하는 첫 단계입니다</p>
+                </div>
                 <div class="col-md-6">
                   <h2 data-field="Title" data-placeholder="Enter Title..."><p><br></p><p>Office 365 계정 생성, 어려우신가요?</p></h2>
                   <div class="wysiwyg-generated-content" data-field="Html" data-placeholder="Enter copy block...">
@@ -2535,7 +2503,7 @@
     <div id="FloaterEmbed" style="display: none">
       <div id="EmbedTextDiv"> <span id="EmbedTextSpan">EMBED THE SNIPPET BELOW IN YOUR SITE</span> <a id="EmbedHelpLink" title="Copy this code and place it into your HTML."> <img id="EmbedHelpImg" src="./index_files/embed_question.png"></a> </div>
       <div id="EmbedTextboxDiv">
-      <input name="EmbedSnippetTextBox" type="text" id="EmbedSnippetTextBox" readonly="readonly" value="&lt;div id=&#39;MicrosoftTranslatorWidget&#39; class=&#39;Dark&#39; style=&#39;color:white;background-color:#555555&#39;&gt;&lt;/div&gt;&lt;script type=&#39;text/javascript&#39;&gt;setTimeout(function(){var s=document.createElement(&#39;script&#39;);s.type=&#39;text/javascript&#39;;s.charset=&#39;UTF-8&#39;;s.src=((location &amp;&amp; location.href &amp;&amp; location.href.indexOf(&#39;https&#39;) == 0)?&#39;https://ssl.microsofttranslator.com&#39;:&#39;http://www.microsofttranslator.com&#39;)+&#39;/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**&amp;ctf=true&amp;ui=true&amp;settings=manual&amp;from=en&#39;;var p=document.getElementsByTagName(&#39;head&#39;)[0]||document.documentElement;p.insertBefore(s,p.firstChild); },0);&lt;/script&gt;"
+        <input name="EmbedSnippetTextBox" type="text" id="EmbedSnippetTextBox" readonly="readonly" value="&lt;div id=&#39;MicrosoftTranslatorWidget&#39; class=&#39;Dark&#39; style=&#39;color:white;background-color:#555555&#39;&gt;&lt;/div&gt;&lt;script type=&#39;text/javascript&#39;&gt;setTimeout(function(){var s=document.createElement(&#39;script&#39;);s.type=&#39;text/javascript&#39;;s.charset=&#39;UTF-8&#39;;s.src=((location &amp;&amp; location.href &amp;&amp; location.href.indexOf(&#39;https&#39;) == 0)?&#39;https://ssl.microsofttranslator.com&#39;:&#39;http://www.microsofttranslator.com&#39;)+&#39;/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**&amp;ctf=true&amp;ui=true&amp;settings=manual&amp;from=en&#39;;var p=document.getElementsByTagName(&#39;head&#39;)[0]||document.documentElement;p.insertBefore(s,p.firstChild); },0);&lt;/script&gt;"
           onclick="this.select()"> </div>
       <div id="EmbedNoticeDiv"><span id="EmbedNoticeSpan">Enable collaborative features and customize widget: <a href="http://www.bing.com/widget/translator" target="_blank">Bing Webmaster Portal</a></span></div>
       <div id="EmbedFooterDiv"><span id="EmbedBackSpan"><a href="javascript:Microsoft.Translator.FloaterOnEmbedBackClick()" title="Back To Translation">Back</a></span></div>
