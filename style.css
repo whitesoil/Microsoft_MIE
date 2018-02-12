@@ -249,7 +249,7 @@ body {
   /* background-color: white; */
   background-color: #f9f9f9;
   padding-top: 2%;
-  padding-bottom: 2%;
+  padding-bottom: 1%;
   text-align: center;
 }
 
@@ -277,7 +277,7 @@ body {
 
 .sector_4_article_1_right {
   text-align: left;
-  padding-top: 5%;
+  padding-top: 4%;
   padding-left: 5%;
   float: right;
   width: 50%;
@@ -442,9 +442,9 @@ body {
     height: 1280px;
   }
 
-  .sector_2 .j_h2{
-    font-size: 26px;
-    line-height: 42px
+  .sector_2 .j_h3{
+    font-size: 23px;
+    line-height: 34px
   }
 
   .sector_2_article_1_right {
