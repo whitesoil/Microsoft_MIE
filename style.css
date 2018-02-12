@@ -306,6 +306,11 @@ body {
     border-color:#f00; */
 }
 
+.sector_4_article_1_left_content .line{
+  text-align: left;
+
+}
+
 .sector_4_comment {}
 
 .sector_4_comment_right {
@@ -364,6 +369,10 @@ body {
   /* border-style: solid;
     border-width: 0.1px;
     border-color:#f00; */
+}
+
+.sector_4_article_2_left_content .line{
+  text-align: left;
 }
 
 .code_box {
@@ -428,6 +437,12 @@ body {
     line-height: 40px
   }
   .header .j_h3 {
+    font-size: 25px;
+    line-height: 44px;
+    font-weight: 400
+  }
+
+  .sector_1 .j_h3 {
     font-size: 25px;
     line-height: 44px;
     font-weight: 400
@@ -539,15 +554,90 @@ body {
   }
 
   .sector_4_article_1_right {
-    text-align: left;
-    padding-top: 4%;
-    padding-left: 5%;
+    text-align: center;
+    padding-top: 0%;
     float: none;
     width: 100%;
-    height: 300px;
+    height: 200px;
     /* border-style: solid;
       border-width: 0.1px;
       border-color:#00f; */
+  }
+
+  .sector_4_article_1_left {
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    padding-left: 0%;
+  }
+
+  .sector_4_article_1_left_content {
+    padding-top: 5%;
+    text-align: center;
+    height: 100%;
+  }
+
+  .sector_4_article_1_left_content .line{
+    text-align: center;
+  }
+
+  .sector_4_comment_right {
+    float: right;
+    width: 50%;
+    height: 250px;
+    /* padding-right: 25%; */
+  }
+
+  .sector_4_comment_right_content {
+    padding-top: 2%;
+    padding-left: 1%;
+    text-align: center;
+    height: 100%;
+  }
+
+  .sector_4_comment_left {
+    background-color: white;
+    width: 50%;
+    height: 250px;
+    /* padding-left: 25%; */
+  }
+
+  .sector_4_comment_left_content {
+    padding-top: 2%;
+    padding-right: 10%;
+    text-align: center;
+    height: 100%;
+  }
+
+  .sector_4_article_2_right {
+    text-align: center;
+    padding-top: 0%;
+    float: none;
+    width: 100%;
+    height: 200px;
+    /* border-style: solid;
+      border-width: 0.1px;
+      border-color:#00f; */
+  }
+
+  .sector_4_article_2_left {
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    padding-left: 0%;
+  }
+
+  .sector_4_article_2_left_content {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    text-align: center;
+    height: 100%;
+  }
+
+  .sector_4_article_2_left_content .line{
+    text-align: center;
   }
 
 
@@ -559,9 +649,5 @@ body {
     font-size: 20px;
     line-height: 20px
   }
-  .sector_1 .j_h3 {
-    font-size: 25px;
-    line-height: 44px;
-    font-weight: 400
-  }
+
 }
