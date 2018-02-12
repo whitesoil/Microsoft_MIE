@@ -286,9 +286,6 @@ body {
   float: right;
   width: 50%;
   height: 300px;
-  /* border-style: solid;
-    border-width: 0.1px;
-    border-color:#00f; */
 }
 
 .sector_4_article_1_left {
@@ -590,6 +587,7 @@ body {
     display: block;
   }
 
+
   .sector_4_article_1_left_content .line{
     text-align: center;
   }
@@ -673,6 +671,16 @@ body {
   .sector_4_article_2_left_content .j_h2{
     font-size: 30px;
     line-height: 44px
+  }
+
+  .code_box {
+    display: inline-block;
+    border: 1px solid #000000;
+    padding: 1.16rem 7rem;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 0rem;
+    font-size: 18px;
   }
 
   #promotion_link_web{
