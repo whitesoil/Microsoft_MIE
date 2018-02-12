@@ -95,6 +95,10 @@ body {
   display: none;
 }
 
+.display_mobile{
+  display : none;
+}
+
 /*
 * End
 */
@@ -432,6 +436,10 @@ body {
   .br_2{
     display: block;
   }
+  .display_mobile{
+    display: block;
+  }
+
   .header .j_h0 {
     font-size: 60px;
     line-height: 40px
@@ -559,9 +567,6 @@ body {
     float: none;
     width: 100%;
     height: 200px;
-    /* border-style: solid;
-      border-width: 0.1px;
-      border-color:#00f; */
   }
 
   .sector_4_article_1_left {
@@ -575,6 +580,14 @@ body {
     padding-top: 5%;
     text-align: center;
     height: 100%;
+  }
+
+  #promotion_web{
+    display: none;
+  }
+
+  #promotion_mobile{
+    display: block;
   }
 
   .sector_4_article_1_left_content .line{
@@ -634,6 +647,14 @@ body {
 
     text-align: center;
     height: 100%;
+  }
+
+  #promotion_link_web{
+    display: none;
+  }
+
+  #promotion_link_mobile{
+    
   }
 
   .sector_4_article_2_left_content .line{
