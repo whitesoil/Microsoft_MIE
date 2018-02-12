@@ -91,6 +91,10 @@ body {
   font-size: 18px;
 }
 
+.br_2{
+  display: none;
+}
+
 /*
 * End
 */
@@ -204,6 +208,10 @@ body {
   border-color:#f00; */
 }
 
+.sector_2_article_1_left_content .line{
+  text-align: left;
+}
+
 .sector_2_article_2_right {
   float: right;
   width: 50%;
@@ -215,6 +223,10 @@ body {
   padding-top: 13%;
   text-align: right;
   height: 100%;
+}
+
+.sector_2_article_2_right_content .line{
+  text-align: right;
 }
 
 .sector_2_article_2_left {
@@ -405,6 +417,10 @@ body {
   .br_1 {
     display: none;
   }
+
+  .br_2{
+    display: block;
+  }
   .header .j_h0 {
     font-size: 60px;
     line-height: 40px
@@ -414,6 +430,96 @@ body {
     line-height: 44px;
     font-weight: 400
   }
+
+  .sector_1 .j_h4{
+    padding-left: 4%;
+    padding-right: 4%;
+    font-size: 1.45rem;
+    line-height: 25px
+  }
+
+  .sector_2_container{
+    height: 1280px;
+  }
+
+  .sector_2 .j_h2{
+    font-size: 26px;
+    line-height: 42px
+  }
+
+  .sector_2_article_1_right {
+    float: none;
+    width: 100%;
+    height: 200px;
+  }
+
+  .sector_2_article_1_left {
+    width: 100%;
+    height: 350px;
+    padding-left: 0%;
+  }
+
+  .sector_2_article_1_left_content {
+    padding-top: 5%;
+    text-align: center;
+    height: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .sector_2_article_1_left_content .line{
+    text-align: center;
+  }
+
+  .sector_2_article_1_left_content .j_h3{
+    font-size: 23px;
+    line-height: 35px;
+  }
+
+  .sector_2_hidden {
+    background: url(./images/photo2.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 200px;
+  }
+
+  .sector_2_article_2_right {
+    float: none;
+    width: 100%;
+    height: 200px;
+    padding-right: 0%;
+  }
+
+  .sector_2_article_2_right_content {
+    padding-top: 6%;
+    text-align: center;
+    height: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .sector_2_article_2_right_content .j_h3{
+    font-size: 23px;
+    line-height: 35px;
+  }
+
+  .sector_2_article_2_right_content .line{
+    text-align: center;
+  }
+
+  .sector_2_article_2_left{
+    display: none;
+  }
+
+  .sector_3 .j_h4{
+    padding-left: 4%;
+    padding-right: 4%;
+    font-size: 17px;
+    line-height: 25px
+  }
+
+
   .bottom .j_h0 {
     font-size: 50px;
     line-height: 40px
