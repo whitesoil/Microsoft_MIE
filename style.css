@@ -286,68 +286,80 @@ body {
 
 .sector_4_article_1_right {
   text-align: left;
-  padding-top: 4%;
+  padding-top: 1.5%;
   padding-left: 5%;
   float: right;
   width: 50%;
   height: 300px;
+}
+.sector_4_article_1_right_content_1{
+  margin-bottom: 70px;
+}
+
+.sector_4_article_1_right_content_1 span {
+    display: inline-block;
+    padding: 0 10px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #6d419f;
 }
 
 .sector_4_article_1_left {
   background-color: white;
   width: 50%;
   height: 300px;
-  padding-left: 25%;
-  /* border-style: solid;
-    border-width: 0.1px;
-    border-color:#0f0; */
+  padding-left: 20%;
+  border-right: 1px solid #e5e5e5;
 }
 
 .sector_4_article_1_left_content {
   padding-top: 5%;
+  padding-right: 8%;
   text-align: left;
   height: 100%;
-  /* border-style: solid;
-    border-width: 0.1px;
-    border-color:#f00; */
 }
+
+.sector_4_article_1_left_content .code_copy{
+  padding: 30px 0 20px 0;
+}
+
+.sector_4_article_1_left_content .code_copy span {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 22px;
+    line-height: 35px;
+}
+
+.sector_4_article_1_left_content .code_copy span:first-child {
+    padding-left: 85px;
+    padding-right: 85px;
+    color: #0078d7;
+    background-color: #e0e0e0;
+    margin: 0;
+}
+
+.sector_4_article_1_left_content .code_copy span:last-child{
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #666;
+    cursor: pointer;
+}
+
+
+
+
 
 .sector_4_article_1_left_content .line{
   text-align: left;
 
 }
 
-.sector_4_comment {}
 
-.sector_4_comment_right {
-  float: right;
-  width: 50%;
-  height: 250px;
-  padding-right: 25%;
+.sector_4_article_2 {
+  margin-top: 200px;
 }
-
-.sector_4_comment_right_content {
-  padding-top: 2%;
-  padding-left: 1%;
-  text-align: center;
-  height: 100%;
-}
-
-.sector_4_comment_left {
-  background-color: white;
-  width: 50%;
-  height: 250px;
-  padding-left: 25%;
-}
-
-.sector_4_comment_left_content {
-  padding-top: 2%;
-  padding-right: 10%;
-  text-align: center;
-  height: 100%;
-}
-
-.sector_4_article_2 {}
 
 .sector_4_article_2_right {
   text-align: left;
@@ -362,14 +374,17 @@ body {
   background-color: white;
   width: 50%;
   height: 400px;
-  padding-left: 25%;
+  padding-left: 20%;
+  padding-bottom: 7%;
   /* border-style: solid;
     border-width: 0.1px;
     border-color:#0f0; */
 }
 
 .sector_4_article_2_left_content {
+  border-right: 1px solid #e5e5e5;
   padding-top: 5%;
+  padding-right: 8%;
   text-align: left;
   height: 100%;
   /* border-style: solid;
@@ -429,6 +444,35 @@ body {
 */
 
 /* Responsive style */
+@media only screen and (max-width: 1400px) {
+  .sector_4_article_1_left_content .code_copy{
+    padding: 30px 0 20px 0;
+  }
+
+  .sector_4_article_1_left_content .code_copy span {
+      display: inline-block;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-size: 22px;
+      line-height: 35px;
+  }
+
+  .sector_4_article_1_left_content .code_copy span:first-child {
+      padding-left: 85px;
+      padding-right: 85px;
+      color: #0078d7;
+      background-color: #e0e0e0;
+      margin: 0;
+  }
+
+  .sector_4_article_1_left_content .code_copy span:last-child{
+      margin: 0;
+      padding-left: 30px;
+      padding-right: 30px;
+      background-color: #666;
+      cursor: pointer;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .br_1 {
@@ -584,56 +628,8 @@ body {
     height: 100%;
   }
 
-  #promotion_web{
-    display: none;
-  }
-
-  #promotion_mobile{
-    display: block;
-  }
-
-
   .sector_4_article_1_left_content .line{
     text-align: center;
-  }
-
-  .sector_4_comment_right {
-    float: right;
-    width: 100%;
-    height: 100px;
-    padding-right: 0%;
-  }
-
-  .sector_4_comment_right_content {
-    padding-top: 2%;
-    padding-left: 1%;
-    text-align: center;
-    height: 100%;
-  }
-
-  .sector_4_comment .j_h4{
-      font-size: 18px;
-      line-height: 24px
-  }
-
-  .sector_4_comment p{
-      font-size: 14px;
-      line-height: 20px
-  }
-
-  .sector_4_comment_left {
-    background-color: white;
-    width: 100%;
-    height: 150px;
-    padding-left: 0%;
-  }
-
-  .sector_4_comment_left_content {
-    padding-top: 2%;
-    padding-right: 4%;
-    padding-left: 4%;
-    text-align: center;
-    height: 100%;
   }
 
   .sector_4_article_2_right {
