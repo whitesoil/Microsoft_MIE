@@ -167,7 +167,7 @@ body {
 */
 
 .sector_2 {
-  background-color: white;
+  background-color: #f9f9f9;
   text-align: center;
 }
 
@@ -209,7 +209,6 @@ body {
   width: 50%;
   height: 450px;
   padding-right: 7%;
-  background-color: white;
 }
 
 .sector_2_article_2_right_content {
@@ -235,10 +234,10 @@ body {
 */
 
 .sector_3 {
-  background-color: white;
-  /* background-color: #f9f9f9; */
-  padding-top: 4%;
-  padding-bottom: 1%;
+  /* background-color: white; */
+  background-color: #f9f9f9;
+  padding-top: 2%;
+  padding-bottom: 2%;
   text-align: center;
 }
 
