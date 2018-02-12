@@ -37,11 +37,11 @@
 
   <link href="./index_files/bootstrap.min.css" rel="stylesheet">
   <link href="./index_files/styles.css" rel="stylesheet">
+  <link href="./styles.css" rel="stylesheet">
 
   <!--[if lt IE 9]><script src="/Assets/js/oldie.min.js?t=636445569180000000"></script><![endif]-->
-
-
-
+  <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
   <!-- Begin WEDCS Meta -->
   <meta name="ms.env" content="prod">
@@ -147,7 +147,7 @@
         chatbot: {
           botConnection: {
             secret: "",
-            token: "zKHvls21A0U.dAA.OQBJAGYAVABLAGoANwBUADUANQBuAEwAQgA4AE8AbAB1AE8AeABEADAAdgA.mb7k00mi0wE.Lr71efNPplI.HG4QkqEPNTHG34HETsKLOogXb5Q94e9fWuJx-DnydRc",
+            token: "zKHvls21A0U.dAA.NABOAHQAeABQAGkAWAA3AEcANABqAEgAWAB2AEgAcgBDAGcAWQBuAFAAVAA.mWQu6P-h0wE.Wj2lDCvYlu4.GHwA5XbvjeXSFh0lQuee7i-SrCfYvL5FitHkvq9Qj9w",
             domain: ""
           },
           user: {
@@ -644,7 +644,953 @@
   <script type="text/javascript" charset="utf-8" src="./index_files/metrics.js"></script>
   <script type="text/javascript" charset="utf-8" src="./index_files/community.aspx"></script>
   <link href="./index_files/WidgetLauncher.css" rel="stylesheet">
-  <style type="text/css"></style>
+  <style>
+    a,
+    abbr,
+    acronym,
+    address,
+    applet,
+    article,
+    aside,
+    audio,
+    b,
+    blockquote,
+    big,
+    body,
+    center,
+    canvas,
+    caption,
+    cite,
+    code,
+    command,
+    datalist,
+    dd,
+    del,
+    details,
+    dfn,
+    dl,
+    div,
+    dt,
+    em,
+    embed,
+    fieldset,
+    figcaption,
+    figure,
+    font,
+    footer,
+    form,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    header,
+    hgroup,
+    html,
+    i,
+    iframe,
+    img,
+    ins,
+    kbd,
+    keygen,
+    label,
+    legend,
+    li,
+    meter,
+    nav,
+    object,
+    ol,
+    output,
+    p,
+    pre,
+    progress,
+    q,
+    s,
+    samp,
+    section,
+    small,
+    span,
+    source,
+    strike,
+    strong,
+    sub,
+    sup,
+    table,
+    tbody,
+    tfoot,
+    thead,
+    th,
+    tr,
+    tdvideo,
+    tt,
+    u,
+    ul,
+    var {
+      background: transparent;
+      border: 0 none;
+      font-size: 100%;
+      margin: 0;
+      padding: 0;
+      vertical-align: baseline;
+      list-style: none;
+      text-decoration: none
+    }
+
+    body {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      font-weight: 400;
+      font-family: "Segoe UI", sans-serif
+    }
+
+    .line {
+      text-align: center;
+    }
+
+    #wrap {
+      width: 100%;
+      height: 100%;
+      word-break: keep-all;
+      white-space: normal;
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+      line-height: 23px;
+      font-family: "Segoe UI", sans-serif
+    }
+
+    .clearfix {
+      clear: both
+    }
+
+    .jcols {
+      float: left
+    }
+
+    .wid20 {
+      width: 20%;
+      box-sizing: border-box
+    }
+
+    .wid25 {
+      width: 25%;
+      box-sizing: border-box
+    }
+
+    .wid30 {
+      width: 30%;
+      box-sizing: border-box
+    }
+
+    .wid33 {
+      width: 33.333%;
+      box-sizing: border-box
+    }
+
+    .wid40 {
+      width: 40%;
+      box-sizing: border-box
+    }
+
+    .wid50 {
+      width: 50%;
+      box-sizing: border-box
+    }
+
+    .wid60 {
+      width: 60%;
+      box-sizing: border-box
+    }
+
+    .wid70 {
+      width: 70%;
+      box-sizing: border-box
+    }
+
+    .wid45 {
+      width: 45%;
+      box-sizing: border-box
+    }
+
+    .wid55 {
+      width: 55%;
+      box-sizing: border-box
+    }
+
+    .wid80 {
+      width: 80%;
+      box-sizing: border-box
+    }
+
+    .aqua_blue {
+      color: #00a1dd
+    }
+
+    .dark_blue {
+      color: #003a5d
+    }
+
+    .white {
+      color: #fff
+    }
+
+
+    #j_main {
+      height: 800px;
+      background: url("https://www.eventservice.kr/2017/microsoft/mec_community/images//main_back.jpg");
+    }
+
+    .site_width {
+      width: 1140px;
+      margin: 0 auto;
+      border: 0px solid #000
+    }
+
+    .j_h0 {
+      font-size: 100px;
+      line-height: 70px
+    }
+
+    .j_h1 {
+      font-size: 50px;
+      line-height: 66px
+    }
+
+    .j_h2 {
+      font-size: 40px;
+      line-height: 54px
+    }
+
+    .j_h3 {
+      font-size: 30px;
+      line-height: 44px;
+      font-weight: 400
+    }
+
+    .j_h4 {
+      font-size: 24px;
+      line-height: 36px
+    }
+
+    .j_h5 {
+      font-size: 18px;
+      line-height: 30px
+    }
+
+    .j_h6 {
+      font-size: 15px;
+      line-height: 27px
+    }
+
+    .j_rfloat {
+      float: right
+    }
+
+    .txtleft {
+      text-align: left !important
+    }
+
+    .txtright {
+      text-align: right !important
+    }
+
+    .sector_2 {
+      font-size: 2em;
+    }
+
+    .sector_2_text {
+      font-size: 1.2em;
+    }
+
+    .sector_3 .j_h3 {
+      font-size: 2.5em;
+    }
+
+    .sector_3 .br_2 {
+      display: none;
+    }
+
+    #miee_logo {
+      width: 23%;
+    }
+
+
+
+    section .site_width {
+      height: 100%;
+    }
+
+    section .site_width .jtable {
+      display: table;
+      height: 100%;
+      border: 0px solid #000
+    }
+
+    section .site_width .jtable .jtable_cell {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center
+    }
+
+    section .site_width .jtable .jtable_cell span {
+      display: block;
+      font-size: 26px;
+      line-height: 40px;
+      margin: 10px 0
+    }
+
+    section .site_width .jtable .jtable_cell .j_bluebtn {
+      display: inline-block;
+      background-color: #00b9ed;
+      font-size: 26px;
+      padding: 20px 50px;
+      color: #fff
+    }
+
+
+    #j_course {
+      background: url("./images/middle_1.png");
+      background-position: 50% 50%
+    }
+
+    #j_course .site_width {
+      position: relative;
+      height: 500px;
+      border: 0px solid #000;
+    }
+
+    #j_course .site_width .j_yellowarea {
+      box-sizing: border-box;
+      padding: 2%;
+      background-color: #d9a453;
+      background: rgba(217, 165, 84, 0.7);
+      position: absolute;
+      bottom: 0;
+      border: 0px solid #000;
+      width: 70%;
+      margin-left: 15%;
+      text-align: center;
+      color: #fff
+    }
+
+    #j_course .site_width .j_yellowarea span {
+      font-size: 25px;
+    }
+
+    #j_course2 {
+      text-align: center;
+      padding: 60px 0
+    }
+
+    #j_course2 .site_width h3.j_h3 {
+      font-size: 25px;
+      line-height: 40px;
+      font-weight: 600;
+      display: block;
+      margin-top: 10px
+    }
+
+    #j_course2 .site_width span {
+      font-size: 18px;
+      line-height: 32px;
+      margin-top: 20px;
+      display: block
+    }
+
+
+    #j_course3 {
+      background: url("https://www.eventservice.kr/2017/microsoft/mec_community/images//main2_img2.jpg")no-repeat;
+      background-position: top right;
+      height: 450px;
+      background-color: #e8e8e8;
+    }
+
+
+    .sec_course .site_width h3.j_h3 {
+      font-size: 30px;
+      line-height: 48px
+    }
+
+    .sec_course .site_width .jtable_cell span {
+      font-size: 16px !important;
+      line-height: 28px !important
+    }
+
+    .j_yellowbtn {
+      display: inline-block;
+      background-color: #f68e21;
+      font-size: 18px;
+      padding: 15px 50px;
+      color: #fff
+    }
+
+
+    #j_course4 {
+      background: url("https://www.eventservice.kr/2017/microsoft/mec_community/images//main2_img3.jpg")no-repeat;
+      background-position: top left;
+      height: 450px;
+      background-color: #f1f1f1;
+    }
+
+    #j_course5 {
+      padding: 60px 0
+    }
+
+    #j_course5 .site_width h3.j_h3 {
+      display: block;
+      border: 0px solid #000;
+      text-align: center;
+      margin-bottom: 40px
+    }
+
+    #j_course5 .site_width .wid50 h4.j_h4 {
+      font-size: 25px;
+      line-height: 48px
+    }
+
+    #j_course5 .site_width .wid50 span {
+      display: block;
+      font-size: 15px;
+      margin-bottom: 20px;
+      line-height: 28px
+    }
+
+    #j_course5 .site_width .wid50 .j_code {
+      background-color: #e0e0e0;
+      font-size: 18px;
+      padding: 15px;
+      float: left;
+      width: 300px;
+      text-align: center;
+      color: #0078d7;
+      font-weight: 500
+    }
+
+    #j_course5 .site_width .wid50 .j_copy {
+      display: inline-block;
+      font-size: 20px;
+      background-color: #666666;
+      padding: 15px;
+      color: #fff
+    }
+
+    #j_course5 .site_width .wid50 .j_copy2 {
+      display: inline-block;
+      font-size: 18px;
+      border: 2px solid #006bc3;
+      padding: 10px;
+      margin-top: 20px;
+      color: #0078d7
+    }
+
+
+    #j_course5 .site_width .copycell2 {
+      padding-top: 50px
+    }
+
+    #j_course5 .site_width .copycell2 h6.j_h6 {
+      font-size: 20px;
+      font-weight: 400
+    }
+
+    #j_course5 .site_width .copycell2 span {
+      padding-left: 20px;
+      font-size: 15px;
+      line-height: 28px;
+      margin-top: 5px
+    }
+
+    #j_course6 {
+      background-color: #e0e0e0;
+      padding: 30px 0
+    }
+
+    #j_course6 .site_width .wid50 h4.j_h4 {
+      font-size: 25px;
+      line-height: 48px;
+      margin-top: 20px
+    }
+
+    #j_course6 .site_width .wid50 span {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 20px;
+      line-height: 28px
+    }
+
+    #j_course6 .site_width .wid50 .big_bluebtn {
+      display: inline-block;
+      font-size: 18px;
+      color: #0078d7;
+      padding: 10px 50px;
+      border: 1px solid #0078d7;
+    }
+
+    #sector_1 .j_h4 {
+      padding-left: 25%;
+      padding-right: 25%;
+    }
+
+
+    @media screen and (max-width:1700px) {
+      #j_course3 {
+        background-position: 150% 100%;
+      }
+      #j_course4 {
+        background-position: -50% 100%;
+      }
+      #sector_1 .j_h4 {
+        padding-left: 25%;
+        padding-right: 25%;
+      }
+
+
+    }
+
+    @media screen and (max-width:1600px) {
+      #sector_1 .j_h4 {
+        padding-left: 25%;
+        padding-right: 25%;
+      }
+
+    }
+
+    @media screen and (max-width:1500px) {
+      #sector_1 .j_h4 {
+        padding-left: 25%;
+        padding-right: 25%;
+      }
+
+    }
+
+    @media screen and (max-width:1400px) {
+      #sector_1 .j_h4 {
+        padding-left: 18%;
+        padding-right: 18%;
+      }
+    }
+
+    @media screen and (max-width:1300px) {
+      #j_course3 {
+        background-position: 250% 100%;
+      }
+      #j_course4 {
+        background-position: -150% 100%;
+      }
+      #sector_1 .j_h4 {
+        padding-left: 18%;
+        padding-right: 18%;
+      }
+
+    }
+
+    @media screen and (max-width:1140px) {
+      .site_width {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0% 1%;
+        box-sizing: border-box
+      }
+
+      #j_white_back {
+        background-position: 500px 100%;
+      }
+      #j_white_back2 {
+        background-position: -300px 100%;
+      }
+      #j_white_back3 {
+        background-position: 500px 100%;
+      }
+      #j_white_back5 .site_width .wid70 {
+        width: 90%;
+      }
+
+
+      #j_white_back4 .site_width .wid50 img {
+        max-width: 430px;
+        width: 90%
+      }
+
+      #j_course3 {
+        background-position: 500px 100%;
+      }
+      #j_course4 {
+        background-position: -500px 100%;
+      }
+
+      #j_course .site_width .j_yellowarea .j_h2 {
+        font-size: 32px;
+        line-height: 46px
+      }
+      #j_course .site_width .j_yellowarea span {
+        font-size: 25px;
+      }
+      #sector_1 .j_h4 {
+        font-size: 22px;
+        line-height: 30px;
+        padding-left: 13%;
+        padding-right: 13%;
+      }
+
+    }
+
+    @media screen and (max-width:850px) {
+      #j_course5 .site_width .wid50 {
+        width: 100%
+      }
+      #j_course6 .site_width .wid50 {
+        text-align: center !important
+      }
+      .j_h0 {
+        font-size: 70px;
+        line-height: 60px
+      }
+    }
+
+
+    @media screen and (max-width:850px) {
+
+
+
+      #j_white_back {
+        background-position: 300px 100%;
+      }
+      #j_white_back2 {
+        background-position: -300px 100%;
+      }
+      #j_white_back3 {
+        background-position: 300px 100%;
+      }
+      section .site_width .wid50 {
+        width: 100%;
+        padding-bottom: 20px
+      }
+      section .site_width .wid60 {
+        width: 100%;
+      }
+      section .site_width .jtable_cell h3 {
+        text-shadow: 2px 2px 7px white;
+      }
+      section .site_width .jtable_cell span {
+        text-shadow: 2px 2px 7px white;
+      }
+
+
+    }
+
+
+    @media screen and (max-width:768px) {
+      #sector_1 .j_h3 {
+        font-size: 25px;
+        line-height: 20px;
+      }
+      #sector_1 .j_h4 {
+        font-size: 17.8px;
+        line-height: 25px;
+        padding-left: 6%;
+        padding-right: 6%;
+      }
+      #j_course .site_width .j_yellowarea .j_h2 {
+        font-size: 24px;
+        line-height: 32px
+      }
+      #kh_hs_back .j_h3 {
+        font-size: 20px;
+        line-height: 20px
+      }
+      #kh_middle_2 .j_h3 {
+        font-size: 20px;
+        line-height: 20px
+      }
+      .j_h0 {
+        font-size: 60px;
+        line-height: 40px
+      }
+      .sector_2 {
+        font-size: 19px;
+      }
+      .sector_2_text {
+        font-size: 1.0em;
+        padding-left: 8%;
+        padding-right: 8%;
+      }
+      .br_1 {
+        display: none;
+      }
+      .sector_hide {
+        display: none;
+      }
+      #miee_logo {
+        width: 30%;
+      }
+      .sector_3 .j_h3 {
+        font-size: 1.7em;
+      }
+      .sector_3 .br_2 {
+        display: block;
+      }
+
+
+
+      section .site_width .wid50 {
+        width: 100%;
+        padding-bottom: 20px
+      }
+      section .site_width .wid60 .jtable_cell {
+        text-align: center !important
+      }
+
+      #j_course3 {
+        background-position: 500px 100%;
+      }
+      #j_course4 {
+        background-position: -700px 100%;
+      }
+
+      #j_course5 .site_width .wid50 .j_code {
+        width: 200px;
+      }
+
+      #j_course .site_width h1.j_h1 {
+        font-size: 30px;
+        line-height: 50px
+      }
+      #j_course .site_width .j_yellowarea span {
+        font-size: 18px;
+        line-height: 30px
+      }
+
+      #j_course2 .site_width h3.j_h3 {
+        font-size: 22px;
+        line-height: 36px;
+      }
+      #j_course2 .site_width span {
+        font-size: 16px;
+        line-height: 32px;
+      }
+
+      .sec_course .site_width h3.j_h3 {
+        font-size: 24px;
+        line-height: 36px
+      }
+      .sec_course .site_width .jtable_cell span {
+        font-size: 16px !important;
+        line-height: 30px !important
+      }
+      #j_course2 {
+        text-align: center;
+        padding: 40px 0
+      }
+      #j_course3 {
+        height: auto;
+        padding: 40px 0
+      }
+      #j_course4 {
+        height: auto;
+        padding: 40px 0
+      }
+      #j_course5 {
+        height: auto;
+        padding: 40px 0
+      }
+
+      #j_course5 .site_width {
+        padding-left: 5%;
+        padding-right: 5%;
+        box-sizing: border-box
+      }
+      #j_course5 .site_width h3.j_h3 {
+        margin-bottom: 20px
+      }
+      #j_course5 .site_width .wid50 h4.j_h4 {
+        font-size: 25px;
+        line-height: 40px
+      }
+      #j_course5 .site_width .wid50 span {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 20px;
+        line-height: 28px
+      }
+      #j_course5 .site_width .wid50 .j_code {
+        font-size: 18px;
+        padding: 15px;
+      }
+      #j_course5 .site_width .wid50 .j_copy {
+        font-size: 16px;
+        padding: 15px;
+        color: #fff
+      }
+      #j_course5 .site_width .wid50 .j_copy2 {
+        font-size: 16px;
+        padding: 10px;
+        margin-top: 10px;
+      }
+      #j_course5 .site_width .copycell2 {
+        padding-top: 30px
+      }
+
+      #j_course6 .site_width .wid50 img {
+        max-width: 300px;
+        width: 90%
+      }
+    }
+
+
+    @media screen and (max-width:650px) {
+
+
+      #j_course3 {
+        background-position: 400px 100%;
+      }
+      #j_course4 {
+        background-position: -700px 100%;
+      }
+
+      #j_course5 .site_width .wid50 .j_code {
+        width: 200px;
+      }
+    }
+
+    @media screen and (max-width:600px) {
+
+
+      #j_course3 {
+        background: none;
+        background-color: #e8e8e8;
+      }
+      #j_course4 {
+        background: none;
+        background-color: #f1f1f1;
+      }
+
+      #j_course5 .site_width .wid50 .j_code {
+        width: 200px;
+      }
+    }
+
+
+    @media screen and (max-width:420px) {
+
+      #j_course .site_width h1.j_h1 {
+        font-size: 30px !important;
+        line-height: 44px
+      }
+      #j_course2 .site_width h3.j_h3 {
+        font-size: 22px !important;
+        line-height: 34px;
+      }
+      .sec_course .site_width h3.j_h3 {
+        font-size: 24px !important;
+        line-height: 34px
+      }
+
+      #j_course5 .site_width .wid50 .j_code {
+        font-size: 18px;
+        padding: 15px;
+        display: inline-block;
+        width: auto;
+      }
+      #j_course5 .site_width .wid50 .j_copy {
+        font-size: 16px;
+        padding: 15px;
+        color: #fff
+      }
+      #j_course5 .site_width .wid50 .j_copy2 {
+        font-size: 16px;
+        padding: 10px;
+        margin-top: 10px;
+      }
+      #j_course5 .site_width .copycell2 span br {
+        display: none
+      }
+      #j_course6 .site_width .wid50 span br {
+        display: none
+      }
+
+    }
+  </style>
+  <style type="text/css">
+    #kh_hs_back {
+      width: 100%;
+      background: url(./images/header.jpg);
+      background-size: cover;
+      background-position: 50% 50%;
+      background-position-x: 50%;
+      background-position-y: 50%;
+      height: 400px;
+      position: relative;
+    }
+
+    #kh_hs_back2 {
+      width: 100%;
+      background: url(./images/middle_1.png);
+      background-size: cover;
+      background-position: 50% 50%;
+      background-position-x: 50%;
+      background-position-y: 35%;
+      height: 400px;
+      position: relative;
+    }
+
+    #kh_hs_back .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 5rem;
+      color: white;
+      z-index: 2;
+      text-align: center;
+
+    }
+
+    #kh_middle_1 {
+      width: 100%;
+      background: url(./images/middle_1.png);
+      background-size: cover;
+      background-position: 50% 50%;
+      background-position-x: 50%;
+      background-position-y: 40%;
+      height: 480px;
+      position: relative;
+    }
+
+    #kh_middle_1 .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 5rem;
+      color: white;
+      z-index: 2;
+      text-align: center;
+    }
+
+    #kh_middle_2 {
+      width: 100%;
+      background: url(./images/middle_2.png);
+      background-size: cover;
+      background-position: 50% 50%;
+      background-position-x: 50%;
+      background-position-y: 50%;
+      height: 480px;
+      position: relative;
+    }
+
+    #kh_middle_2 .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 5rem;
+      color: white;
+      z-index: 2;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body lang="en" style="overflow-y: auto;">
@@ -667,7 +1613,7 @@
         <div id="MSTCFooterPanel"><span id="MSTCLegalHelpBox"><a id="MSTCLegalLink" href="http://aka.ms/translatortou" target="_blank">Legal</a><span class="MSTCSpacer"></span><a id="MSTCHelpLink" href="http://go.microsoft.com/?linkid=9722454" target="_blank">Help</a></span>
         </div>
       </div>
-      <div id="MSTCHidden" style="display: none;"><span id="MSTCAppIdToken">Ye7SaJXzTt_fb7VaRz7Tulpj8hKjnfpOutH54WOX3xw2Vv_-QN3yGNmo4L1tqF5tiVDos1Lb9qqfW7VhQq2R-3In_aqLkz2PeEqCwUVOy4aldBeMnB_3KF9gaK0TK_Pbu</span><span id="MSTCMaxRating">1</span><span id="MSTCImagePath">https://ssl.microsofttranslator.com/static/25292150/img/</span>
+      <div id="MSTCHidden" style="display: none;"><span id="MSTCAppIdToken">Y7l-WttX30iMg0nMjjmVKSb4VW7AMOmvqPZUIL8SgRL9xjui2245yzQo516swHnVqpove4xLKYqpR8LwO2iiU9oNm4SLP8h6i2jaIgMJHfr2vQsVxEdipbYzwp7iqlyiD</span><span id="MSTCMaxRating">1</span><span id="MSTCImagePath">https://ssl.microsofttranslator.com/static/25292150/img/</span>
         <span id="MSTCAuthLang"></span><a id="MSTCDashboardUrl"></a><span id="MSTCSubmitting">Submitting...</span><span id="MSTCApprove">Approve</span><span id="MSTCApproveTooltip">Approve this as the default translation</span><span id="MSTCReject">Reject</span>
         <span id="MSTCRejectTooltip">Hide this translation from other users</span>
         <span id="MSTCRestore">Restore</span><span id="MSTCRestoreTooltip">Show this translation to other users</span><span id="MSTCUserID"></span></div>
@@ -1382,17 +2328,13 @@
         <div class="navbar-signin-container" data-info-box-target="sign-in-reminder" data-info-box-template="sign-in-reminder-content" data-original-title="" title="">
           <ul class="nav navbar-nav navbar-signin">
             <li>
-              <a href="https://education.microsoft.com/microsoft-innovative-educator-programs/mie#" class="btn btn-signin" data-toggle="modal" data-target="#SignInModal" data-mode="auth" style="outline: none;">
-                                            로그인
-                                        </a>
+              <a href="https://education.microsoft.com/microsoft-innovative-educator-programs/mie#" class="btn btn-signin" data-toggle="modal" data-target="#SignInModal" data-mode="auth" style="outline: none;">로그인</a>
             </li>
             <li role="separator" class="divider-vertical"></li>
             <li>
               <div class="notamember">
                 Not a Member?
-                <a href="https://education.microsoft.com/microsoft-innovative-educator-programs/mie#" class="btn btn-join" data-toggle="modal" data-target="#SignInModal" data-mode="register" style="outline: none;">
-                                                Join Now
-                                            </a>
+                <a href="https://education.microsoft.com/microsoft-innovative-educator-programs/mie#" class="btn btn-join" data-toggle="modal" data-target="#SignInModal" data-mode="register" style="outline: none;">Join Now</a>
               </div>
             </li>
             <li>
@@ -1406,16 +2348,19 @@
         <div class="hidden-xs hidden-sm hidden-md navbar-right navbar-help-and-translate" id="navbar-sticky">
           <ul class="nav navbar-nav navbar-sticky">
             <li>
-              <a href="https://education.microsoft.com/Main/FAQ">
-                                        <span class="glyphicon glyphicon-question-sign"></span>
-                                        Community Support
-                                    </a>
+              <a href="https://education.microsoft.com/Main/FAQ"><span class="glyphicon glyphicon-question-sign"></span>Community Support</a>
             </li>
             <li>
               <a href="javascript:void(0)" class="microsoft-translator-widget-container" style="line-height: 39px; min-width:79px; padding:0 12px;">
                                         <span class="glyphicon glyphicon-globe"></span>
-                                        <div id="MicrosoftTranslatorWidget" translate="no" style="background-color: transparent;"><div id="WidgetLauncher" style="direction: ltr;"><div id="LauncherTranslatePhrase" class="WidgetEnabled" style="background-color: rgba(0, 0, 0, 0);" title="Translate To English"><span id="TranslateSpan">TRANSLATE</span></div><div id="LauncherLogo" class="WithPhraseAfter">
-                                          <a id="LauncherLogoLink" href="https://www.bing.com/translator" target="_blank" title="//www.bing.com/translator"><img id="LauncherLogoImage" src="./index_files/binglogo_light.png"></a></div>
+                                        <div id="MicrosoftTranslatorWidget" translate="no" style="background-color: transparent;">
+                                          <div id="WidgetLauncher" style="direction: ltr;">
+                                            <div id="LauncherTranslatePhrase" class="WidgetEnabled" style="background-color: rgba(0, 0, 0, 0);" title="Translate To English">
+                                              <span id="TranslateSpan">TRANSLATE</span>
+                                            </div>
+                                            <div id="LauncherLogo" class="WithPhraseAfter">
+                                          <a id="LauncherLogoLink" href="https://www.bing.com/translator" target="_blank" title="//www.bing.com/translator"><img id="LauncherLogoImage" src="./index_files/binglogo_light.png"></a>
+        </div>
       </div>
     </div>
     <script type="text/javascript">
@@ -1570,99 +2515,120 @@
 
   </div>
 
-  <link href="./style.css?var=2" rel="stylesheet">
-  <div class="page-content">
+
+  <div class="page-content" style="">
     <div id="story" dir="ltr" class="category-mieprograms">
 
-      <!-- Header -->
-      <section class="header">&nbsp;
-        <div class="col-xs-12 wysiwyg-generated-content content">
-          <p class="j_h3">마이크로소프트 인증 혁신 교사</p>
-          <h2 class="j_h0">Certified MIE</h2>
+      <section id="kh_hs_back">&nbsp;
+        <div class="col-xs-12 wysiwyg-generated-content content" data-field="Html" data-placeholder="Enter copy block...">
+          <p class="j_h3" style="text-align: center;">마이크로소프트 인증 혁신 교사</p>
+          <p>
+            <br />
+          </p>
+          <h2 class="j_h0" style="text-align: center;"><b>Certified MIE</b></h2>
         </div>
       </section>
-      <!-- End -->
 
-      <!-- Sector_1 -->
-      <section class="sector_1">
-        <div class="sector_1_container">
-          <p><img src="./index_files/8c06d24b-e39b-4b77-9604-0c10d6587b2b.jpg"></p>
-          <br/>
-          <p class="j_h3"><b>마이크로소프트 인증 혁신 교사</b></p>
-          <div class="line">
-            <img src="https://i.imgur.com/fIuaYXh.png">
-          </div>
-          <p class="j_h4">더 나은 교육을 위해 전 세계의 열정적인 교육자들이 함께하는 <br class="br_1" /><b>전문적인 학습 네트워크</b>에 참여하는 첫 단계입니다</p>
-        </div>
-      </section>
-      <!-- End -->
+      <div class="module" data-module-id="259f2fd8-859d-337d-d3f3-42fde446118b" data-module-type="Text" id="259f2fd8-859d-337d-d3f3-42fde446118b">
+        <div class="module-content">
 
-      <!-- Middle -->
-      <section class="middle">&nbsp;
-        <div class="col-xs-12 wysiwyg-generated-content content">
-        </div>
-      </section>
-      <!-- End -->
-
-      <!-- Sector_2 -->
-      <section class="sector_2">
-        <div class="sector_2_container">
-          <div class="sector_2_header">
-            <p class="j_h2">마이크로소프트 인증 혁신 교사들을 위한 혜택</p>
-            <div class="line">
-              <img src="https://i.imgur.com/fIuaYXh.png">
-            </div>
-          </div>
-          <div class="sector_2_article_1">
-            <div class="sector_2_article_1_right">
-
-            </div>
-            <div class="sector_2_article_1_left">
-              <div class="sector_2_article_1_left_content">
-                <p class="j_h3">
-                  SW 기반 수업을 위해 <br class="br_1" /><b>Office 365</b> 계정 생성이 필요하신가요?
-                </p>
-                <div class="line" style="text-align:left">
-                  <img src="https://i.imgur.com/fIuaYXh.png">
+          <section class="story-section story-text background-white">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  <h2 data-field="Title" data-placeholder="Enter Title..."><p class=""><br></p></h2>
                 </div>
-                <p>
-                  Certified MIE가 되면 수업 때 마인크래프트 등 <br class="br_1" /> 다양한 솔루션을 사용할 수 있도록 선생님이 속한 학급과 학교가 <br class="br_1" /> Office 365를 무료로 사용하실 수 있도록 마이크로소프트의 전문가가 직접 도와드립니다.
-                </p>
-                <p><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR9Wc6u9qJUZEgBmZ8B8WtABUOEJRU043QU9VVVZEVUhLRFJTTDBMNVNGTy4u" target="_blank" class="blue_btn">Office 365 혜택 더 알아보기 ></a></p>
+              </div>
+              <div id="sector_1" class="row">
+                <div class="col-xs-12 wysiwyg-generated-content" data-field="Html" data-placeholder="Enter copy block...">
+                  <p class="" style="text-align: center;"><img src="./index_files/8c06d24b-e39b-4b77-9604-0c10d6587b2b.jpg"></p>
+                  <p class="" style="text-align: center;"><br></p>
+                  <p class="j_h3" style="text-align: center;"><b>마이크로소프트 인증 혁신 교사</b></p>
+                  <div class="line" style="margin-top : 2rem;margin-bottom: 2rem;">
+                    <img src="https://i.imgur.com/fIuaYXh.png">
+                  </div>
+                  <p class="j_h4" style="text-align: center;">더 나은 교육을 위해 전 세계의 열정적인 교육자들이 함께하는 <br class = "br_1" /><b>전문적인 학습 네트워크</b>에 참여하는 첫 단계입니다</p>
+                  <p class="" style="text-align: center;"><br></p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="sector_2_article_2">
-            <div class="sector_2_article_2_right">
-              <div class="sector_2_article_2_right_content">
-                <p class="j_h3">
-                  전 세계 선생님들 및 전문가들과의<br class="br_1" /> <b>네트워크</b>를 가지고 싶으신가요?
-                </p>
-                <div class="line" style="text-align:right">
-                  <img src="https://i.imgur.com/fIuaYXh.png">
-                </div>
-                <p>
-                  Certified MIE가 되어 더 나은 교육을 위한 교육자들의 프로그램에 참여할 수 있는 <br class="br_1" /> Microsoft Innovative Educator Expert(MIEE) 지원자격을 부여받으세요.
-                </p>
-                <p><a href="https://education.microsoft.com/microsoft-innovative-educator-programs/mie-expert" target="_blank" class="blue_btn">MIEE 더 알아보기 ></a></p>
-              </div>
-            </div>
-            <div class="sector_2_article_2_left">
-
-            </div>
-          </div>
+          </section>
         </div>
-      </section>
-      <!-- End -->
-
-      <!-- Sector_3 -->
-      <div class="sector_3">
-        <p class="j_h4">“회원가입을 하고 프로모션 코드 입력과 강의 수강을 통해 1000점을 모아 마이크로소프트 인증 혁신 교사(Certified MIE)가 되어보세요”</p>
       </div>
-      <!--- End --->
 
-      <!--- Sector_4 --->
-      <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
+      <section id="kh_hs_back2">&nbsp;
+        <div class="col-xs-12 wysiwyg-generated-content content" data-field="Html" data-placeholder="Enter copy block...">
+        </div>
+      </section>
+      <!-- <section id="kh_middle_1">&nbsp;
+      </section> -->
+
+      <div class="module" data-module-id="5b6d2369-9956-2615-4b9f-5f63014fc892" data-module-type="Text" id="5b6d2369-9956-2615-4b9f-5f63014fc892">
+        <div class="module-content">
+
+          <section class="story-section story-text background-white">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 wysiwyg-generated-content" data-field="Html" data-placeholder="Enter copy block...">
+                  <p class="" style="text-align: center;"><br></p>
+                  <p class="sector_2" style="text-align: center;"><b>마이크로소프트 인증 혁신 교사들을 위한 혜택</b></p>
+                  <p class="sector_2" style="text-align: center;"><b>다음의 혜택들을 누릴 수 있습니다</b></p>
+
+                  <p class="sector_2" style="text-align: center;">“ 회원가입을 하고 프로모션 코드 입력과 강의 수강을 통해 1000점을 모아 <br class="br_1" /><b>마이크로소프트 인증 혁신 교사(Certified MIE)</b>가 되어보세요 ”</p>
+                  <div class="line" style="margin-top : 2rem;margin-bottom: 2rem;">
+                    <img src="https://i.imgur.com/fIuaYXh.png">
+                  </div>
+                  <p class="" style="text-align: center;"><br></p>
+                </div>
+                <div class="col-md-6">
+                  <p class="sector_2" style="text-align: center;">SW 기반 수업을 위해 <br />Office 365 계정 생성이 필요하신가요?</p>
+                  <div class="wysiwyg-generated-content" data-field="Html" data-placeholder="Enter copy block...">
+                    <br/>
+                    <p class="sector_2_text" style="text-align: center;">Certified MIE가 되면 수업에서 마인크래프트 등 <br class="br_1" />다양한 솔루션을 사용하기 위해 필요한 Office 365 설치를 <br class="br_1" />마이크로소프트의 전문가가 무료로 직접 도와드립니다.</p>
+                    <br />
+                    <p class="" style="text-align: center;"><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR9Wc6u9qJUZEgBmZ8B8WtABUOEJRU043QU9VVVZEVUhLRFJTTDBMNVNGTy4u" target="_blank" class="btn btn-danger">Office 365 혜택 더 알아보기</a></p>
+                  </div>
+                </div>
+                <div class="col-md-6 sector_hide">
+                  <p><img style="width : 100%;" src="./index_files/45fc95c6-fbc7-48b5-a875-3770044a175a.jpg" data-field="ItemUrl"></p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="module" data-module-id="99419284-adfe-023c-7a52-89b9beaa59f3" data-module-type="Text" id="99419284-adfe-023c-7a52-89b9beaa59f3">
+        <div class="module-content">
+          <section class="story-section story-text background-white">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 sector_hide">
+                  <p><img class="img-responsive" src="./index_files/33c2db09-ea69-495e-93cc-5fef892d39c4.jpg" data-field="ItemUrl"></p>
+                </div>
+                <div class="col-md-6">
+                  <p class="sector_2" style="text-align: center;">전 세계 선생님들 및 전문가들과의 <br />네트워크를 가지고 싶으신가요?</p>
+                  <div class="wysiwyg-generated-content" data-field="Html" data-placeholder="Enter copy block...">
+                    <br>
+                    <p class="sector_2_text" style="text-align: center;">마이크로소프트 인증 혁신 교사(Certified MIE)가 되어 <br class="br_1" />더 나은 교육을 위한 교육자들의 프로그램에 참여할 수 있는 <br class="br_1" />MIE(Microsoft Innovative Educator) Expert 지원 자격을 부여받으세요.</p>
+                    <br />
+                    <p class="" style="text-align: center;"><a href="https://education.microsoft.com/microsoft-innovative-educator-programs/mie-expert" target="_blank" class="btn btn-warning">MIEE 더 알아보기</a></p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <section id="kh_middle_2">&nbsp;
+        <div class="col-xs-12 wysiwyg-generated-content content" data-field="Html" data-placeholder="Enter copy block...">
+          <h2 class="j_h0" style="text-align: center; font-weight:400;">지금 시작하세요</h2>
+          <hr style="width : 22%; height:2px;border:none;color:#fff;background-color:#fff;" />
+          <p class="j_h3" style="text-align: center;">마이크로소프트의 전 세계 다양한 전문 분야의 선생님들과 교육 혁신을 이끌어 나가세요</p>
+        </div>
+      </section>
+
       <script>
         window.onload = function() {
           $(document).ready(function() {
@@ -1670,75 +2636,38 @@
           });
         };
       </script>
+      <section class="story-section story-text background-white">
+        <div class="container sector_3">
+          <div class="row">
+            <div class="col-xs-12 wysiwyg-generated-content" data-field="Html" data-placeholder="Enter copy block...">
+              <p class="j_h3" style="text-align: center;">마이크로소프트 <br class="br_2" />인증 혁신 교사가 되는 방법</p>
+              <div class="line" style="margin-top : 2rem;margin-bottom: 2rem;">
+                <img src="https://i.imgur.com/fIuaYXh.png">
+              </div>
+              <p class="" style="text-align: center;"><br></p>
+              <p class="" style="text-align: center; font-size : 2em;"><b>Step1</b><br /> 아래의 프로모션 코드를 복사해서 입력하세요</p>
 
-      <section class="sector_4">
-        <div class="sector_4_container">
-          <div class="sector_4_header">
-            <p class="j_h2">마이크로소프트 인증 혁신 교사가 되는 방법</p>
-            <div class="line">
-              <img src="https://i.imgur.com/fIuaYXh.png">
-            </div>
-          </div>
-          <div class="sector_4_article_1">
-            <div class="sector_4_article_1_right">
-              <div>
-                <p type="text" id="copy" value="LJRIFCC1818" class = "blue_btn">LJRIFCC1818</p>
-                <button class="clipboard blue_btn" data-clipboard-target="#copy">복사하기</button>
+              <div style="text-align:center;">
+
+                <div type="text" id="copy" value="LJRIFCC1818" style="width :30%; border: 2px solid red; border-radius: 5px;">LJRIFCC1818</div>
+                <button class="clipboard btn btn-success" data-clipboard-target="#copy">복사하기</button>
+
               </div>
-            </div>
-            <div class="sector_4_article_1_left">
-              <div class="sector_4_article_1_left_content">
-                <p class = "j_h2">Step 1</p>
-                <div class="line" style="text-align:left">
-                  <img src="https://i.imgur.com/fIuaYXh.png">
-                </div>
-                <p>다음의 프로모션 코드를 복사해서 입력하세요</p>
+              <br />
+              <div style="width : 50%; height:200px; background-color:#000;float:right;">
+
               </div>
-            </div>
-          </div>
-          <!-- <div class="sector_4_comment">
-            <div class="sector_4_comment_right">
-              <a href="https://education.microsoft.com/main/promocode" class ="custom_btn">프로모션 코드 입력하기 ></a>
-            </div>
-            <div class="sector_4_comment_left">
-              <div class="sector_4_article_2_left_content">
-                <p class = "j_h2">Step 2</p>
-                <div class="line" style="text-align:left">
-                  <img src="https://i.imgur.com/fIuaYXh.png">
-                </div>
-                <p>코드 입력 후 재로그인해서 1000점을 모아 <br class ="br_1"/>마이크로소프트 인증 혁신 교사가 되어 위의 혜택들을 받으세요</p>
+              <div style="width : 50%; height:200px; background-color:#965;">
+
               </div>
-            </div>
-          </div> -->
-          <div class="sector_4_article_2">
-            <div class="sector_4_article_2_right">
-              <a href="https://education.microsoft.com/main/promocode" class ="blue_btn">프로모션 코드 입력하기 ></a>
-            </div>
-            <div class="sector_4_article_2_left">
-              <div class="sector_4_article_2_left_content">
-                <p class = "j_h2">Step 2</p>
-                <div class="line" style="text-align:left">
-                  <img src="https://i.imgur.com/fIuaYXh.png">
-                </div>
-                <p>코드 입력 후 재로그인해서 1000점을 모아 <br class ="br_1"/>마이크로소프트 인증 혁신 교사가 되어 위의 혜택들을 받으세요</p>
-              </div>
+              <p class="" style="text-align: center;"><br></p>
+              <p class="" style="text-align: center; font-size : 2em;"><b>Step2</b><br />코드 입력 후 재로그인해서 1000점을 모아 <br class="br_1" />마이크로소프트의 인증혁신 교사가 되어 위의 혜택들을 받으세요</p>
+              <p class="" style="text-align: center;"><br></p>
             </div>
           </div>
         </div>
       </section>
-      <!--- End ---->
 
-      <!-- Bottom -->
-      <section class="bottom">&nbsp;
-        <div class="col-xs-12 wysiwyg-generated-content content">
-          <h1 class="j_h1">지금 시작하세요</h1>
-          <hr style="width : 27%; height:2px;border:none;color:#fff;background-color:#fff;" />
-          <p class="j_3">마이크로소프트의 전 세계 다양한 전문 분야의 선생님들과 교육 혁신을 이끌어 나가세요</p>
-        </div>
-      </section>
-      <!-- End -->
-
-      <!-- Footer -->
       <div class="module" data-module-id="d225d87f-aea7-6789-56e4-7d8029008a47" data-module-type="OpenHTML" id="d225d87f-aea7-6789-56e4-7d8029008a47">
         <div class="module-content">
 
@@ -2349,9 +3278,9 @@
     <div id="WidgetFloater" style="display: none" onmouseover="Microsoft.Translator.OnMouseOverFloater()" onmouseout="Microsoft.Translator.OnMouseOutFloater()">
       <div id="WidgetLogoPanel"> <span id="WidgetTranslateWithSpan" style="text-align:left;">Bing Translator</span> <span id="WidgetCloseButton" title="Exit Translation" onclick="Microsoft.Translator.FloaterOnClose()"><img src="./index_files/close_x.png" id="WidgetCloseImage" class="WidgetCloseImage"></span></div>
       <div id="LanguageMenuPanel">
-        <div class="DDStyle_outer"><input name="LanguageMenu_svid" type="text" id="LanguageMenu_svid" style="display:none;" autocomplete="on" value="ko" onclick="this.select()"> <input name="LanguageMenu_textid" type="text" id="LanguageMenu_textid" style="display:none;" autocomplete="on"
+        <div class="DDStyle_outer"><input name="LanguageMenu_svid" type="text" id="LanguageMenu_svid" style="display:none;" autocomplete="on" value="en" onclick="this.select()"> <input name="LanguageMenu_textid" type="text" id="LanguageMenu_textid" style="display:none;" autocomplete="on"
             onclick="this.select()"> <span onselectstart="return false" tabindex="0" class="DDStyle" id="__LanguageMenu_header" onclick="return LanguageMenu &amp;&amp; !LanguageMenu.Show(&#39;__LanguageMenu_popup&#39;, event);" onkeydown="return LanguageMenu &amp;&amp; !LanguageMenu.Show(&#39;__LanguageMenu_popup&#39;, event);"
-            title="Korean" style="overflow: visible;">Korean</span>
+            title="English" style="overflow: visible;">English</span>
           <div style="position:relative;text-align:left;left:0;">
             <div style="position:absolute;width:;left:0px;">
               <div class="DDStyle" style="display:none;" id="__LanguageMenu_popup">
