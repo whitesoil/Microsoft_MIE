@@ -317,6 +317,7 @@ body {
 
 .sector_4_comment_right_content {
   padding-top: 2%;
+  padding-left: 1%;
   text-align: center;
   height: 100%;
 }
@@ -330,6 +331,7 @@ body {
 
 .sector_4_comment_left_content {
   padding-top: 2%;
+  padding-right: 10%;
   text-align: center;
   height: 100%;
 }
@@ -439,7 +441,7 @@ body {
   }
 
   .sector_2_container{
-    height: 1280px;
+    height: 1250px;
   }
 
   .sector_2 .j_h3{
@@ -465,6 +467,10 @@ body {
     height: 100%;
     padding-left: 4%;
     padding-right: 4%;
+  }
+
+  .sector_2_article_1_left_content p{
+    font-size: 15px;
   }
 
   .sector_2_article_1_left_content .line{
@@ -499,6 +505,10 @@ body {
     padding-right: 4%;
   }
 
+  .sector_2_article_2_right_content p{
+    font-size: 15px;
+  }
+
   .sector_2_article_2_right_content .j_h3{
     font-size: 23px;
     line-height: 35px;
@@ -517,6 +527,27 @@ body {
     padding-right: 4%;
     font-size: 17px;
     line-height: 25px
+  }
+
+  .sector_4_header{
+    padding-top: 5%;
+  }
+
+  .sector_4_header .j_h3{
+    font-size: 23px;
+    line-height: 35px;
+  }
+
+  .sector_4_article_1_right {
+    text-align: left;
+    padding-top: 4%;
+    padding-left: 5%;
+    float: none;
+    width: 100%;
+    height: 300px;
+    /* border-style: solid;
+      border-width: 0.1px;
+      border-color:#00f; */
   }
 
 
