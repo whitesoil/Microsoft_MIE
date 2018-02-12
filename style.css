@@ -192,11 +192,11 @@ body {
 .sector_2_article_1_left {
   width: 50%;
   height: 450px;
-  padding-left: 5%;
+  padding-left: 7%;
 }
 
 .sector_2_article_1_left_content {
-  padding-top: 9%;
+  padding-top: 5%;
   text-align: left;
   height: 100%;
   /* border-style: solid;
@@ -208,7 +208,7 @@ body {
   float: right;
   width: 50%;
   height: 450px;
-  padding-right: 5%;
+  padding-right: 7%;
   background-color: white;
 }
 
