@@ -1,8 +1,4 @@
-/*
-* Global
-*/
-
-html, body {
+body {
   margin: 0 auto;
 }
 
@@ -99,21 +95,12 @@ body {
   display: none;
 }
 
-/*
-* End
-*/
-
-/*
-* Header
-*/
 
 .header {
   width: 100%;
   background: url("https://gvipqa.dm2302.livefilestore.com/y4mIiDEPt0ruO2OB2DVTmbpzGb2Vsp1Jvtfi3jHytT5TGZ-vuTaeM3zsJ2HiWbw7kusxz6UEoWjtx1yNy8dsaMXEDybr_z5ThWTu9YCDlmgWmM6uOvr-qT6nqAtDZopVXNiOfSZ2UZO30QEj1X7JqFtMuBJ73qjx0J5ukmRu7lXM5XAbUj58mcGbHwiyD8INAZUjoD-Q_zwlLVQn2AdsKnwDQ?width=960&height=639&cropmode=none");
   background-size: cover;
   background-position: 50% 50%;
-  background-position-x: 50%;
-  background-position-y: 50%;
   height: 400px;
   position: relative;
 }
@@ -132,13 +119,7 @@ body {
   font-weight: 500;
 }
 
-/*
-* End
-*/
 
-/*
-* Sector_1
-*/
 
 .sector_1 {
   padding-top: 4%;
@@ -147,13 +128,7 @@ body {
   text-align: center;
 }
 
-/*
-* End
-*/
 
-/*
-* Sector_2
-*/
 
 .sector_2 {
   background-color: #f9f9f9;
@@ -221,13 +196,7 @@ body {
   height: 450px;
 }
 
-/*
-* End
-*/
 
-/*
-* Sector_3
-*/
 
 .sector_3 {
   background-color: white;
@@ -236,13 +205,7 @@ body {
   text-align: center;
 }
 
-/*
-* End
-*/
 
-/*
-* Sector_4
-*/
 
 .sector_4 {
   background-color: white;
@@ -374,21 +337,12 @@ body {
   font-size: 18px;
 }
 
-/*
-* End
-*/
-
-/*
-* Bottom
-*/
 
 .bottom {
   width: 100%;
   background: url("https://efhehq.dm2302.livefilestore.com/y4mHYvW41m8iIPvOVLXBmOyeo5xYbMj6J8BYLOqyQv8db5nVvKKEHK7fbJikVsU_PNewrkjfUV0H0VvLvbjipKj0_dsjO6SypjnHXF9osz7yM1WueNIYCTu63QaxP3-P9vO-DAwSuQkgDRCM_SzQqsCsV8WIzfEO9OxeHrFYeSAoXoowmW6-0R1rN8KRN-Cf22LLzLpwIAvJaUGl3auQaXENA?width=1920&height=520&cropmode=none");
   background-size: cover;
   background-position: 50% 50%;
-  background-position-x: 50%;
-  background-position-y: 50%;
   height: 480px;
   position: relative;
   background-color: white;
@@ -408,11 +362,6 @@ body {
   font-weight: 400;
 }
 
-/*
-* End
-*/
-
-/* Responsive style */
 
 @media only screen and (max-width: 1800px) {
   .sector_4_article_1_left_content .code_copy {
